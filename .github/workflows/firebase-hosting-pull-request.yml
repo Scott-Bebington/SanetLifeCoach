@@ -19,4 +19,4 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_SANETLIFECOACH }}
           projectId: sanetlifecoach
         env:
-          FIREBASE_CLI_EXPERIMENTAL: enabled
+          FIREBASE_CLI_EXPERIMENTS: webframeworks
