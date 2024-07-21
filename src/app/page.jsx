@@ -1,8 +1,9 @@
 "use client";
+import Homepage from "./Homepage";
 import Navbar from "./Navbar";
 
 const sections = [
-  { id: "home", color: "bg-sky-400", label: "Home" },
+  // { id: "home", color: "bg-sky-400", label: "Home" },
   { id: "my-style", color: "bg-green-400", label: "My Style" },
   { id: "life-coaching", color: "bg-blue-400", label: "Life Coaching" },
   { id: "cbt", color: "bg-red-400", label: "CBT" },
@@ -14,6 +15,7 @@ export default function Home() {
   return (
     <main className="flex flex-col">
       <Navbar />
+      <Homepage />
       {sections.map((section) => (
         <div
           key={section.id}

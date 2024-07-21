@@ -1,3 +1,4 @@
+import { Button } from '@mui/material';
 import React, { useState } from 'react';
 
 const Navbar = () => {
