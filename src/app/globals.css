@@ -24,13 +24,13 @@
 }
 
 .HomeBackground {
-  background-image: url('../images/Homepage_Background.png');
+  background-image: url('../../public/images/Homepage_Background.png');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .Homepage_Sanet_Image {
-  background-image: url('../images/Homepage_Placeholder.png');
+  background-image: url('../../public/images/Homepage_Placeholder.png');
   background-size: cover;
   background-repeat: no-repeat;
 }

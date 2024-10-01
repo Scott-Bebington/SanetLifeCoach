@@ -45,7 +45,7 @@ function Desktop() {
           <Typography variant="h4" className="text-secondary font-bold">
             Life Coaching for positive Change
           </Typography>
-          <Typography variant="body1" className="text-tertiary pt-small">
+          <div className="text-tertiary pt-small">
             <ul className="list-disc pl-5 space-y-2">
               <li>Improve your well being</li>
               <li>Address your stress and anxiety</li>
@@ -56,12 +56,13 @@ function Desktop() {
               <li>Get motivated</li>
               <li>Improve your relationships</li>
             </ul>
-          </Typography>
+          </div>
         </aside>
         {/* Image placeholder div */}
-        <aside className="h-[377px] w-1/2 bg-red-500 rounded-lg float-left mr-small flex items-center justify-center">
-          Image Placeholder
-        </aside>
+        <img
+          src="/images/Life_Coaching_Image_1.png"
+          className="h-[377px] w-1/2 rounded-lg float-left mr-4 flex items-center justify-center"
+        />
       </section>
       <section>
         <Typography variant="h6" className="px-large py-medium font-bold text-center">
@@ -72,16 +73,20 @@ function Desktop() {
       <section className="px-large flex">
         {/* Image placeholder div */}
         <aside className="h-[377px] w-1/2 mr-small">
-          <div className="h-[380px] w-10/12 bg-red-500 rounded-lg float-left mr-small flex items-center justify-center">
+          {/* <div className="h-[380px] w-10/12 bg-red-500 rounded-lg float-left mr-small flex items-center justify-center">
             Image Placeholder
-          </div>
+          </div> */}
+          <img
+            src="/images/Life_Coaching_Image_2.png"
+            className="h-[380px] w-10/12 rounded-lg float-left mr-4 flex items-center justify-center"
+          />
         </aside>
         {/* Text Content */}
         <aside className="w-1/2">
           <Typography variant="h4" className="text-secondary font-bold">
             Coaching provides:
           </Typography>
-          <Typography variant="body1" className="text-tertiary pt-small">
+          <div className="text-tertiary pt-small">
             <ul className="list-disc pl-5 space-y-2">
               <li>Own unique time </li>
               <li>Structured support</li>
@@ -89,18 +94,18 @@ function Desktop() {
               <li>Exercises</li>
               <li>Practical tools</li>
             </ul>
-          </Typography>
+          </div>
           <Typography variant="h4" className="text-secondary font-bold pt-small">
             Assisting in
           </Typography>
-          <Typography variant="body1" className="text-tertiary pt-small">
+          <div className="text-tertiary pt-small">
             <ul className="list-disc pl-5 space-y-2">
               <li>Overcoming challenges</li>
               <li>Being at peace</li>
               <li>Achieving goals</li>
               <li>Development personally and professionally</li>
             </ul>
-          </Typography>
+          </div>
         </aside>
 
       </section>
@@ -124,14 +129,14 @@ function Tablet() {
           to fulfilment in many aspects or areas of your life.
         </Typography>
       </section>
-      <section className="px-large flex">
+      <section className="px-large">
         {/* Text Content */}
-        <aside className="w-1/2">
+        <aside className="w-full">
           <Typography variant="h4" className="text-secondary font-bold">
             Life Coaching for positive Change
           </Typography>
-          <Typography variant="body1" className="text-tertiary pt-small">
-            <ul className="list-disc pl-5 space-y-2">
+          <div className="flex justify-between">
+            <ul className="text-tertiary pt-small list-disc pl-5 space-y-2">
               <li>Improve your well being</li>
               <li>Address your stress and anxiety</li>
               <li>Enhance your self-belief</li>
@@ -141,12 +146,13 @@ function Tablet() {
               <li>Get motivated</li>
               <li>Improve your relationships</li>
             </ul>
-          </Typography>
+            <img
+              src="/images/Life_Coaching_Image_1.png"
+              className="h-[255px] w-7/12 rounded-lg float-left mr-4 flex items-center justify-center"
+            />
+          </div>
         </aside>
-        {/* Image placeholder div */}
-        <aside className="h-[377px] w-1/2 bg-red-500 rounded-lg float-left mr-small flex items-center justify-center">
-          Image Placeholder
-        </aside>
+
       </section>
       <section>
         <Typography variant="h6" className="px-large py-medium font-bold text-center">
@@ -156,15 +162,16 @@ function Tablet() {
       </section>
       <section className="px-large flex">
         {/* Image placeholder div */}
-        <aside className="h-[380px] w-7/12 bg-red-500 rounded-lg float-left mr-small flex items-center justify-center">
-          Image Placeholder
-        </aside>
+        <img
+          src="/images/Life_Coaching_Image_2.png"
+          className="h-[380px] w-10/12 rounded-lg float-left mr-4 flex items-center justify-center"
+        />
         {/* Text Content */}
         <aside className="w-5/12">
           <Typography variant="h4" className="text-secondary font-bold">
             Coaching provides:
           </Typography>
-          <Typography variant="body1" className="text-tertiary pt-small">
+          <div className="text-tertiary pt-small">
             <ul className="list-disc pl-5 space-y-2">
               <li>Own unique time </li>
               <li>Structured support</li>
@@ -172,18 +179,18 @@ function Tablet() {
               <li>Exercises</li>
               <li>Practical tools</li>
             </ul>
-          </Typography>
+          </div>
           <Typography variant="h4" className="text-secondary font-bold pt-small">
             Assisting in
           </Typography>
-          <Typography variant="body1" className="text-tertiary pt-small">
+          <div className="text-tertiary pt-small">
             <ul className="list-disc pl-5 space-y-2">
               <li>Overcoming challenges</li>
               <li>Being at peace</li>
               <li>Achieving goals</li>
               <li>Development personally and professionally</li>
             </ul>
-          </Typography>
+          </div>
         </aside>
 
       </section>
@@ -211,13 +218,11 @@ function Mobile() {
         </Typography>
       </section>
       <section className="px-small">
-        {/* Text Content */}
         <div className="w-full">
-
           <Typography variant="h5" className="text-secondary font-bold">
             Life Coaching for positive Change
           </Typography>
-          <Typography variant="body1" className="text-tertiary pt-small">
+          <div className="text-tertiary pt-small">
             <ul className="list-disc pl-5 space-y-2">
               <li>Improve your well being</li>
               <li>Address your stress and anxiety</li>
@@ -233,15 +238,16 @@ function Mobile() {
               )}
 
             </ul>
-          </Typography>
+          </div>
           <div className="text-blue-500 cursor-pointer" onClick={() => setPositiveChange(!positiveChangeChecked)}>
             {positiveChangeChecked ? "Read less" : "Read more"}
           </div>
         </div>
         {/* Image placeholder div */}
-        <div className="h-[300px] w-full bg-red-500 rounded-lg mr-small flex items-center justify-center">
-          Image Placeholder
-        </div>
+        <img
+          src="/images/Life_Coaching_Image_1.png"
+          className="h-[200px] w-full rounded-lg float-left mr-4 flex items-center justify-center"
+        />
       </section>
       <section className="px-small py-small">
 
@@ -250,31 +256,28 @@ function Mobile() {
           <Typography variant="h5" className="text-secondary font-bold">
             Coaching provides:
           </Typography>
-          <Typography variant="body1" className="text-tertiary pt-small">
-            <ul className="list-disc pl-5 space-y-2">
-              <li>Own unique time </li>
-              <li>Structured support</li>
-              <li>Challenges</li>
-              <li>Exercises</li>
-              <li>Practical tools</li>
-            </ul>
-          </Typography>
-          <Typography variant="h5" className="text-secondary font-bold pt-small">
-            Assisting in
-          </Typography>
-          <Typography variant="body1" className="text-tertiary pt-small">
-            <ul className="list-disc pl-5 space-y-2">
-              <li>Overcoming challenges</li>
-              <li>Being at peace</li>
-              <li>Achieving goals</li>
-              <li>Development personally and professionally</li>
-            </ul>
-          </Typography>
+          <ul className="text-tertiary pt-small  list-disc pl-5 space-y-2">
+            <li>Own unique time </li>
+            <li>Structured support</li>
+            <li>Challenges</li>
+            <li>Exercises</li>
+            <li>Practical tools</li>
+          </ul>
         </div>
         {/* Image placeholder div */}
-        <div className="h-[250px] w-full bg-red-500 rounded-lg float-left mr-small flex items-center justify-center">
-          Image Placeholder
-        </div>
+        <img
+          src="/images/Life_Coaching_Image_2.png"
+          className="h-[250px] w-full rounded-lg float-left mr-4 my-small flex items-center justify-center"
+        />
+        <Typography variant="h5" className="text-secondary font-bold pt-small">
+          Assisting in
+        </Typography>
+        <ul className="text-tertiary pt-small list-disc pl-5 space-y-2">
+          <li>Overcoming challenges</li>
+          <li>Being at peace</li>
+          <li>Achieving goals</li>
+          <li>Development personally and professionally</li>
+        </ul>
       </section>
     </>
 
