@@ -1,5 +1,5 @@
 import { Avatar, Button } from '@mui/material';
-import backgroundImage from '../images/Homepage_Background.png';
+import backgroundImage from '../../images/Homepage_Background.png';
 
 export default function Homepage() {
     return (
