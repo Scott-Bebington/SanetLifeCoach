@@ -8,7 +8,7 @@ export default function LifeCoaching() {
     <main
       key="life-coaching"
       id="life-coaching"
-      className="min-h-screen w-full bg-gray-100"
+      className="min-h-screen w-full bg-background"
     >
       <div className="hidden lg:block">
         <Desktop />
