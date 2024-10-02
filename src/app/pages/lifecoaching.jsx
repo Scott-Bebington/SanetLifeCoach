@@ -2,7 +2,6 @@
 
 import { Typography, Fade } from "@mui/material";
 import { useState } from "react";
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 
 export default function LifeCoaching() {
   return (
