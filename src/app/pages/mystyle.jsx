@@ -28,12 +28,12 @@ function Desktop() {
     <>
       <section className="p-large">
         {/* Image placeholder div */}
-        <aside className="h-[377px] w-[500px] bg-red-500 rounded-lg float-left mr-small flex items-center justify-center">
-          Image Placeholder
+        <aside className="h-[377px] w-[500px] border-2 border-blue-500 rounded-lg float-left mr-large flex items-center justify-center">
+          Image Placeholder maybe small video explaining what you do
         </aside>
 
         {/* Text Content */}
-        <aside className="min-h-[400px]">
+        <aside className="min-h-[400px] ">
           <Typography variant="h4" className="text-primary font-bold">
             My Style
           </Typography>

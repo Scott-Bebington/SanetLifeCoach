@@ -8,7 +8,7 @@ export default function LifeCoaching() {
     <main
       key="life-coaching"
       id="life-coaching"
-      className="min-h-screen w-full py-12"
+      className="min-h-screen w-full bg-gray-100"
     >
       <div className="hidden lg:block">
         <Desktop />
@@ -24,93 +24,163 @@ export default function LifeCoaching() {
 }
 
 function Desktop() {
+
   return (
     <>
-      <section className="px-large py-medium">
-        <Typography variant="h3" className="text-primary font-bold w-full text-center mb-small">
-          Life Coaching
-        </Typography>
-        <Typography>
-          Coaching is for every person who wants to evolve beyond traumatic experiences, discover their true purpose,
-          achieve goals and improve mental wellness. Whether you&apos;re feeling stuck, overwhelmed, or simply ready for change,
-          I&apos;m here to guide you through your transformation. By identifying where growth is desired, setting realistic goals
-          and objectives and being accountable, you will be able to reach a place of positive self-awareness that will lead
-          to fulfilment in many aspects or areas of your life.
-        </Typography>
-      </section>
-      <section className="px-large flex">
-        {/* Text Content */}
-        <aside className="w-1/2">
-          <Typography variant="h4" className="text-secondary font-bold">
-            Life Coaching for positive Change
-          </Typography>
-          <div className="text-tertiary pt-small">
-            <ul className="list-disc pl-5 space-y-2">
-              <li>Improve your well being</li>
-              <li>Address your stress and anxiety</li>
-              <li>Enhance your self-belief</li>
-              <li>Feel more confident</li>
-              <li>Lead with authority</li>
-              <li>Focused time and energy</li>
-              <li>Get motivated</li>
-              <li>Improve your relationships</li>
-            </ul>
-          </div>
-        </aside>
-        {/* Image placeholder div */}
-        <img
-          src="/images/Life_Coaching_Image_1.png"
-          className="h-[377px] w-1/2 rounded-lg float-left mr-4 flex items-center justify-center"
-        />
-      </section>
-      <section>
-        <Typography variant="h6" className="px-large py-medium font-bold text-center">
-          Life coaching helps you make positive changes in areas of your life in order for you to be your best self.
-          It helps you to explore ideas that feel safe and aligned with your value system.
-        </Typography>
-      </section>
-      <section className="px-large flex">
-        {/* Image placeholder div */}
-        <aside className="h-[377px] w-1/2 mr-small">
-          {/* <div className="h-[380px] w-10/12 bg-red-500 rounded-lg float-left mr-small flex items-center justify-center">
-            Image Placeholder
-          </div> */}
-          <img
-            src="/images/Life_Coaching_Image_2.png"
-            className="h-[380px] w-10/12 rounded-lg float-left mr-4 flex items-center justify-center"
-          />
-        </aside>
-        {/* Text Content */}
-        <aside className="w-1/2">
-          <Typography variant="h4" className="text-secondary font-bold">
-            Coaching provides:
-          </Typography>
-          <div className="text-tertiary pt-small">
-            <ul className="list-disc pl-5 space-y-2">
-              <li>Own unique time </li>
-              <li>Structured support</li>
-              <li>Challenges</li>
-              <li>Exercises</li>
-              <li>Practical tools</li>
-            </ul>
-          </div>
-          <Typography variant="h4" className="text-secondary font-bold pt-small">
+      <section className="flex">
+        <img src="/images/my_approach.png" className="h-screen" />
+        <div>
+          <section className="px-large py-medium">
+            <Typography variant="h3" className="text-primary font-bold w-full my-large">
+              Life Coaching
+            </Typography>
+            <Typography className="mb-medium">
+              Coaching is for every person who wants to evolve beyond traumatic experiences, discover their true purpose,
+              achieve goals and improve mental wellness. Whether you&apos;re feeling stuck, overwhelmed, or simply ready for change,
+              I&apos;m here to guide you through your transformation. By identifying where growth is desired, setting realistic goals
+              and objectives and being accountable, you will be able to reach a place of positive self-awareness that will lead
+              to fulfilment in many aspects or areas of your life.
+            </Typography>
+            <Typography className="mb-large">
+              Life coaching helps you make positive changes in areas of your life in order for you to be your best self.
+              It helps you to explore ideas that feel safe and aligned with your value system.
+            </Typography>
+            <Typography variant="h4" className="text-secondary font-bold">
+              Coaching provides:
+            </Typography>
+            <div className="text-black pt-small">
+              <ul className="list-disc pl-5 space-y-2">
+                <li>Own unique time </li>
+                <li>Structured support</li>
+                <li>Challenges</li>
+                <li>Exercises</li>
+                <li>Practical tools</li>
+              </ul>
+            </div>
+            {/* <Typography variant="h4" className="text-secondary font-bold pt-large">
             Assisting in
           </Typography>
-          <div className="text-tertiary pt-small">
+          <div className="text-black pt-small">
             <ul className="list-disc pl-5 space-y-2">
               <li>Overcoming challenges</li>
               <li>Being at peace</li>
               <li>Achieving goals</li>
               <li>Development personally and professionally</li>
             </ul>
+          </div> */}
+          </section>
+        </div>
+      </section>
+      <section className="bg-primary w-full p-large">
+        <Typography variant="h4" className="text-white font-bold text-center mb-large">
+          Life Coaching for positive Change
+        </Typography>
+        <div className="flex items-center justify-evenly">
+          <div className="flex flex-col items-center justify-center">
+            <img src="/images/well_being.png" className="h-14 w-14" />
+            <Typography variant="h6" className="text-white">Improve your well-being</Typography>
           </div>
-        </aside>
-
+          <div className="flex flex-col items-center justify-center">
+            <img src="/images/stress.png" className="h-14 w-14" />
+            <Typography variant="h6" className="text-white">Address your stress and anxiety</Typography>
+          </div>
+          <div className="flex flex-col items-center justify-center">
+            <img src="/images/self-acceptance.png" className="h-14 w-14" />
+            <Typography variant="h6" className="text-white">Enhance your self-belief</Typography>
+          </div>
+        </div>
       </section>
     </>
 
-  );
+  )
+
+  // return (
+  //   <>
+  //     <section className="px-large py-medium">
+  //       <Typography variant="h3" className="text-primary font-bold w-full text-center mb-large">
+  //         Life Coaching
+  //       </Typography>
+  //       <Typography className="mb-large">
+  //         Coaching is for every person who wants to evolve beyond traumatic experiences, discover their true purpose,
+  //         achieve goals and improve mental wellness. Whether you&apos;re feeling stuck, overwhelmed, or simply ready for change,
+  //         I&apos;m here to guide you through your transformation. By identifying where growth is desired, setting realistic goals
+  //         and objectives and being accountable, you will be able to reach a place of positive self-awareness that will lead
+  //         to fulfilment in many aspects or areas of your life.
+  //       </Typography>
+  //     </section>
+  //     <section className="px-large flex">
+  //       {/* Text Content */}
+  //       <aside className="w-1/2">
+  //         <Typography variant="h4" className="text-secondary font-bold">
+  //           Life Coaching for positive Change
+  //         </Typography>
+  //         <div className="text-black pt-medium">
+  //           <ul className="list-disc pl-5 space-y-2">
+  //             <li>Improve your well-being</li>
+  //             <li>Address your stress and anxiety</li>
+  //             <li>Enhance your self-belief</li>
+  //             <li>Feel more confident</li>
+  //             <li>Lead with authority</li>
+  //             <li>Focused time and energy</li>
+  //             <li>Get motivated</li>
+  //             <li>Improve your relationships</li>
+  //           </ul>
+  //         </div>
+  //       </aside>
+  //       {/* Image placeholder div */}
+  //       <img
+  //         src="/images/Life_Coaching_Image_1.png"
+  //         className="h-[450px]  rounded-lg float-left mr-4 flex items-center justify-center"
+  //       />
+  //     </section>
+  //     <section className="py-large">
+  //       <Typography variant="h6" className="px-large py-medium font-bold text-center">
+  //         Life coaching helps you make positive changes in areas of your life in order for you to be your best self.
+  //         It helps you to explore ideas that feel safe and aligned with your value system.
+  //       </Typography>
+  //     </section>
+  //     <section className="px-large flex">
+  //       {/* Image placeholder div */}
+  //       <aside className="h-[377px] w-1/2 mr-small">
+  //         {/* <div className="h-[380px] w-10/12 bg-red-500 rounded-lg float-left mr-small flex items-center justify-center">
+  //           Image Placeholder
+  //         </div> */}
+  //         <img
+  //           src="/images/life_coaching_gif.gif"
+  //           className="h-[600px] rounded-lg float-left mr-4 flex items-center justify-center"
+  //         />
+  //       </aside>
+  //       {/* Text Content */}
+  //       <aside className="w-1/2">
+  //         <Typography variant="h4" className="text-secondary font-bold">
+  //           Coaching provides:
+  //         </Typography>
+  //         <div className="text-black pt-small">
+  //           <ul className="list-disc pl-5 space-y-2">
+  //             <li>Own unique time </li>
+  //             <li>Structured support</li>
+  //             <li>Challenges</li>
+  //             <li>Exercises</li>
+  //             <li>Practical tools</li>
+  //           </ul>
+  //         </div>
+  //         <Typography variant="h4" className="text-secondary font-bold pt-large">
+  //           Assisting in
+  //         </Typography>
+  //         <div className="text-black pt-small">
+  //           <ul className="list-disc pl-5 space-y-2">
+  //             <li>Overcoming challenges</li>
+  //             <li>Being at peace</li>
+  //             <li>Achieving goals</li>
+  //             <li>Development personally and professionally</li>
+  //           </ul>
+  //         </div>
+  //       </aside>
+
+  //     </section>
+  //   </>
+
+  // );
 }
 
 function Tablet() {

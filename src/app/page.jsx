@@ -1,39 +1,67 @@
 "use client";
+import { useEffect, useRef, useState } from "react";
 import Homepage from "./pages/Homepage";
 import Navbar from "./Navbar";
 import MyStyle from "./pages/mystyle";
 import LifeCoaching from "./pages/lifecoaching";
 import CBT from "./pages/cbt";
 import WhoAmI from "./pages/whoami";
-
-const sections = [
-  // { id: "home", color: "bg-sky-400", label: "Home" },
-  // { id: "my-style", color: "bg-green-400", label: "My Style" },
-  // { id: "life-coaching", color: "bg-blue-400", label: "Life Coaching" },
-  // { id: "cbt", color: "bg-red-400", label: "CBT" },
-  // { id: "background", color: "bg-yellow-400", label: "Background" },
-  { id: "contact", color: "bg-purple-400", label: "Contact" },
-];
+import Contact from "./pages/contact";
 
 export default function Home() {
+  const sectionRefs = useRef([]);
+  const [currentSection, setCurrentSection] = useState("Homepage"); // State to track the current section in view
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.intersectionRatio > 0.5) {
+            const sectionName = entry.target.getAttribute("data-name");
+            setCurrentSection(sectionName); // Update the current section in view
+          }
+        });
+      },
+      { threshold: [0.5] } // Track when more than 50% of the section is in view
+    );
+
+    sectionRefs.current.forEach((section) => {
+      if (section) {
+        observer.observe(section);
+      }
+    });
+
+    return () => {
+      sectionRefs.current.forEach((section) => {
+        if (section) {
+          observer.unobserve(section);
+        }
+      });
+    };
+  }, []);
+
   return (
     <main className="flex flex-col">
-      <Navbar />
-      {/* <Homepage /> */}
-      {/* <MyStyle /> */}
-      {/* <LifeCoaching /> */}
-      {/* <CBT /> */}
-      <WhoAmI />
-
-      {sections.map((section) => (
-        <div
-          key={section.id}
-          id={section.id}
-          className={`min-h-screen w-full flex items-center justify-center ${section.color}`}
-        >
-          {section.label}
-        </div>
-      ))}
+      {/* Pass the current section to the Navbar */}
+      <Navbar currentSection={currentSection} />
+      <div ref={(el) => (sectionRefs.current[0] = el)} data-name="Home">
+        <Homepage />
+      </div>
+      <div ref={(el) => (sectionRefs.current[1] = el)} data-name="My Style">
+        <MyStyle />
+      </div>
+      <div ref={(el) => (sectionRefs.current[2] = el)} data-name="Life Coaching">
+        <LifeCoaching />
+      </div>
+      <div ref={(el) => (sectionRefs.current[3] = el)} data-name="CBT">
+        <CBT />
+      </div>
+      <div ref={(el) => (sectionRefs.current[4] = el)} data-name="Background">
+        <WhoAmI />
+      </div>
+      <div ref={(el) => (sectionRefs.current[5] = el)} data-name="Contact">
+        <Contact />
+      </div>
     </main>
   );
 }

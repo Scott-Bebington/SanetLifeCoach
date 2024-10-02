@@ -8,7 +8,7 @@ export default function WhoAmI() {
     <main
       key="background"
       id="background"
-      className="min-h-screen w-full py-12"
+      className="min-h-screen w-full py-12 bg-gray-100"
     >
       <div className="hidden lg:block">
         <Desktop />
@@ -30,8 +30,8 @@ function Desktop() {
 
 
         <aside className="w-3/5">
-          <Typography variant="h3" className="text-primary font-bold w-full mb-small">
-            So who am i?
+          <Typography variant="h3" className="text-primary font-bold w-full mb-medium">
+            So who am I?
           </Typography>
           <Typography>
             I am a 55 year-old divorced woman. A mother of two young men aged 21 & 23. 
@@ -43,10 +43,10 @@ function Desktop() {
             realized that I had no connection with the course and decided to change to Personnel Management (HR). 
             I completed my Diploma through the Vaal Technicon whilst also working for Gold Fields Mining Company.
           </Typography>
-          <Typography variant="h4" className="text-secondary font-bold w-full mt-medium">
+          <Typography variant="h4" className="text-secondary font-bold w-full my-medium">
             Industries i have been involved in
           </Typography>
-          <ul className="text-tertiary list-disc pl-5 space-y-2">
+          <ul className="text-black list-disc pl-5 space-y-2">
             <li>Accounts and PM Trainee @ East Driefontein Gold mine</li>
             <li>Portfolio Management & accounts @Sable Holdings</li>
             <li>PR & below the line marketing (Partner)@The Publicity Workshop</li>
@@ -56,7 +56,7 @@ function Desktop() {
           </ul>
         </aside>
         {/* <img src="/images/CBT_image_1.png" className="rounded-lg w-2/5 min-w-[450px] h-[600px] mr-large" /> */}
-        <div className="rounded-lg w-2/5 min-w-[450px] h-[600px] flex items-center justify-center border-2 border-blue-500 ml-small">
+        <div className="rounded-lg w-2/5 min-w-[450px] h-[600px] flex items-center justify-center border-2 border-blue-500 ml-large">
           Placeholder image for your photo
         </div>
       </section>
@@ -111,7 +111,7 @@ function Tablet() {
         <Typography variant="h4" className="text-secondary font-bold w-full mt-medium">
           Industries i have been involved in
         </Typography>
-        <ul className="text-tertiary list-disc pl-5 space-y-2">
+        <ul className="text-black list-disc pl-5 space-y-2">
           <li>Accounts and PM Trainee @ East Driefontein Gold mine</li>
           <li>Portfolio Management & accounts @Sable Holdings</li>
           <li>PR & below the line marketing (Partner)@The Publicity Workshop</li>
@@ -143,9 +143,6 @@ function Tablet() {
 
 function Mobile() {
 
-  const [cbtChecked, setCbtChecked] = useState(false);
-  const [benefitsChecked, setBenefitsChecked] = useState(false);
-
   return (
     <>
       <section className="p-small">
@@ -176,7 +173,7 @@ function Mobile() {
         <Typography variant="h4" className="text-secondary font-bold w-full mt-small">
           Industries i have been involved in
         </Typography>
-        <ul className="text-tertiary list-disc pl-5 space-y-2">
+        <ul className="text-black list-disc pl-5 space-y-2">
           <li>Accounts and PM Trainee @ East Driefontein Gold mine</li>
           <li>Portfolio Management & accounts @Sable Holdings</li>
           <li>PR & below the line marketing (Partner)@The Publicity Workshop</li>

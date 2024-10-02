@@ -1,12 +1,10 @@
-import { Button } from '@mui/material';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-const Navbar = () => {
+const Navbar = ({ currentSection }) => {
   const [currentTab, setTab] = useState("Home");
 
   const handleTabClick = (event, tab) => {
     event.preventDefault();
-    setTab(tab);
 
     // Scroll to the corresponding section
     const sectionId = tab.toLowerCase().replace(/ /g, "-");
@@ -17,9 +15,14 @@ const Navbar = () => {
     }
   };
 
+  // Update currentTab when the currentSection prop changes
+  useEffect(() => {
+    setTab(currentSection);
+  }, [currentSection]);
+
   return (
     <nav className='w-full flex justify-between items-center shadow-md h-12 px-10 bg-white' style={{ position: 'fixed', top: 0 }}>
-      <h1>Logo</h1>
+      <img src='/images/Logo-cropped.png' className='h-10' alt='Logo' />
       <ul className='flex gap-10'>
         {["Home", "My Style", "Life Coaching", "CBT", "Background", "Contact"].map(tab => (
           <li key={tab}>

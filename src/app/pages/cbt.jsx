@@ -2,6 +2,7 @@
 
 import { Typography, Fade } from "@mui/material";
 import { useState } from "react";
+import Typewriter from 'typewriter-effect';
 
 export default function CBT() {
   return (
@@ -29,38 +30,42 @@ function Desktop() {
       <section className="px-large py-medium flex">
 
         <img src="/images/CBT_image_1.png" className="rounded-lg w-2/5 h-[600px] mr-large" />
-        <aside className="w-3/5">
-          <Typography variant="h3" className="text-primary font-bold w-full mb-small">
-            What exactly is Cognitive Behavioral Therapy (CBT)?
-          </Typography>
-          <Typography>
-            CBT is a psychology based personal growth discipline that offers thought provoking insights
-            into the relationship between emotions, habits, perspectives, attitudes and behaviours of the human mind.
-            <br /> <br />
-            Through a process of unblocking limiting beliefs, biases and unhelpful thoughts. I help my clients
-            become self-aware, to focus on their abilities and strengths, identifying where they are now, and
-            where they would like to be. We concentrate on skills to help you deal with the ever-changing and
-            challenging world we live in today.
-          </Typography>
-          <Typography variant="h4" className="text-secondary font-bold w-full my-small">
-            The Purpose of CBT
-          </Typography>
-          <ul className="text-tertiary list-disc pl-5 space-y-2">
-            <li>Understanding your mind</li>
-            <li>Raise self-awareness</li>
-            <li>Shape inner resilience</li>
-            <li>Enhance mental well-being</li>
-            <li>Stress reduction</li>
-            <li>Confidence</li>
-            <li>Motivation</li>
-            <li>Life transitions</li>
-          </ul>
+        <aside className="w-3/5 flex flex-col justify-around">
+          <div>
+            <Typography variant="h3" className="text-primary font-bold w-full mb-medium">
+              What exactly is Cognitive Behavioral Therapy (CBT)?
+            </Typography>
+            <Typography>
+              CBT is a psychology based personal growth discipline that offers thought provoking insights
+              into the relationship between emotions, habits, perspectives, attitudes and behaviours of the human mind.
+              <br /> <br />
+              Through a process of unblocking limiting beliefs, biases and unhelpful thoughts. I help my clients
+              become self-aware, to focus on their abilities and strengths, identifying where they are now, and
+              where they would like to be. We concentrate on skills to help you deal with the ever-changing and
+              challenging world we live in today.
+            </Typography>
+          </div>
+
+          <div>
+            <Typography variant="h4" className="text-secondary font-bold w-full mb-medium mt-large">
+              The Purpose of CBT
+            </Typography>
+            <Typewriter
+              options={{
+                strings: ['Understanding your mind', 'Raise self-awareness', 'Shape inner resilience', 'Enhance mental well-being', 'Stress reduction', 'Confidence', 'Motivation', 'Life transitions'],
+                autoStart: true,
+                loop: true,
+                delay: 50,
+              }}
+            />
+          </div>
+
         </aside>
 
 
       </section>
       <section className="px-large flex items-stretch">
-        <aside className="w-7/12 flex flex-col justify-between">
+        <aside className="w-full flex flex-col justify-between">
           <div>
             <Typography variant="h4" className="text-secondary font-bold mb-small">
               Benefits of CBT
@@ -80,11 +85,6 @@ function Desktop() {
             Seven characteristics of a fully functioning person &mdash; Carl Rogers
           </Typography>
         </aside>
-
-        <img
-          src="/images/CBT_image_2.png"
-          className="w-5/12 rounded-lg object-cover"
-        />
       </section>
 
       <section>
