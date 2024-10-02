@@ -28,7 +28,7 @@ function Desktop() {
   return (
     <>
       <section className="px-large py-medium">
-        <Typography variant="h4" className="text-primary font-bold w-full text-center mb-small">
+        <Typography variant="h3" className="text-primary font-bold w-full text-center mb-small">
           Life Coaching
         </Typography>
         <Typography>
@@ -118,7 +118,7 @@ function Tablet() {
   return (
     <>
       <section className="px-large py-medium">
-        <Typography variant="h4" className="text-primary font-bold w-full text-center mb-small">
+        <Typography variant="h3" className="text-primary font-bold w-full text-center mb-small">
           Life Coaching
         </Typography>
         <Typography>
