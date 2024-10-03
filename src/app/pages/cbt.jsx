@@ -143,7 +143,7 @@ function Tablet() {
             the limiting ideas that you currently hold as valid and true.
           </Typography>
         </div>
-              
+
         <Typography variant="h5" className="text-tertiary font-bold mb-small mt-large">
           Seven characteristics of a fully functioning person &mdash; Carl Rogers
         </Typography>
@@ -226,9 +226,9 @@ function Mobile() {
           </span>
         </div>
 
-        <Typography variant="h5" className="text-tertiary font-bold my-small">
+        <h4 className="text-tertiary font-bold my-small">
           Seven characteristics of a fully functioning person &mdash; Carl Rogers
-        </Typography>
+        </h4>
         <Typography variant="body1" className="">
           Growing openness to Experience | Living life Existentially | Increased trust in self | Freedom of choice | Raw creativity | Consistency and Constructiveness | A purpose orientated life
         </Typography>

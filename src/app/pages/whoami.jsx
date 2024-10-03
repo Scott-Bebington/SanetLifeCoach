@@ -31,14 +31,17 @@ export default function WhoAmI() {
         </div>
 
         <div className="md:hidden w-1/3 aspect-square border-2 border-blue-500 rounded-lg float-left mr-small">
-          
+
         </div>
 
         {/* Text Content */}
-        <aside className="min-h-[400px] md:min-h-[300px] sm:min-h-[200px]">
-          <Typography variant="h4" className="text-customPrimary font-bold w-full mb-small">
-            So who am i?
-          </Typography>
+        <aside className="sm:min-h-[200px] md:min-h-[300px] lg:min-h-[400px]">
+          <div className=" mb-small">
+            <Typography variant="h4" className="text-customPrimary font-bold w-full">
+              So who am i?
+            </Typography>
+          </div>
+
           <Typography>
             I am a 55 year-old divorced woman. A mother of two young men aged 21 & 23.
             I was raised in a small-town community by my parents and one of three siblings.
