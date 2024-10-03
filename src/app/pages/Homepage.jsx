@@ -137,22 +137,27 @@ function SmallHomepage() {
       </div>
       <div className='absolute bottom-0 left-0 pt-small pr-medium rounded-tr-[100px] bg-customPrimary z-0'>
         <WhatsAppIcon
+          sx={{ height: '48px' }}
           className='text-white hover:text-green-500 rounded-full p-2 h-[48px] w-10 cursor-pointer'
           onClick={() => { window.location.href = 'https://wa.me/27827820000'; }}
         />
         <InstagramIcon
+          sx={{ height: '48px' }}
           className='text-white hover:text-red-500 rounded-full py-2 h-10 w-10 cursor-pointer'
           onClick={() => { window.location.href = 'https://www.instagram.com/sanetnash/'; }}
         />
         <FacebookOutlinedIcon
+          sx={{ height: '48px' }}
           className='text-white hover:text-blue-500 rounded-full py-2 h-10 w-10 cursor-pointer'
           onClick={() => { window.location.href = 'https://www.facebook.com/SanetNashLifeCoach/'; }}
         />
         <EmailOutlinedIcon
+          sx={{ height: '48px' }}
           className='text-white hover:text-tertiary rounded-full py-2 h-10 w-10 cursor-pointer'
           onClick={() => { window.location.href = 'mailto:sanetnash"gmail.com'; }}
         />
         <LocalPhoneOutlinedIcon
+          sx={{ height: '48px' }}
           className='text-white hover:text-secondary rounded-full py-2 h-10 w-10 cursor-pointer'
           onClick={() => { window.location.href = 'tel:+27827820000'; }}
         />

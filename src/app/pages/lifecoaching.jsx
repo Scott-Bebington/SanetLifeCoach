@@ -31,23 +31,27 @@ function Desktop() {
         <img src="/images/my_approach.png" className="h-screen" />
         <div>
           <section className="px-large py-medium">
-            <Typography variant="h3" className="text-customPrimary font-bold w-full my-large">
-              Life Coaching
-            </Typography>
-            <Typography className="mb-medium">
+            <div className=" my-large">
+              <Typography variant="h3" className="text-customPrimary font-bold w-full" Life Coaching></Typography>
+            </div>
+            <div className="mb-medium">
               Coaching is for every person who wants to evolve beyond traumatic experiences, discover their true purpose,
               achieve goals and improve mental wellness. Whether you&apos;re feeling stuck, overwhelmed, or simply ready for change,
               I&apos;m here to guide you through your transformation. By identifying where growth is desired, setting realistic goals
               and objectives and being accountable, you will be able to reach a place of positive self-awareness that will lead
               to fulfilment in many aspects or areas of your life.
-            </Typography>
-            <Typography className="mb-large">
+            </div>
+
+            <div className="mb-large">
               Life coaching helps you make positive changes in areas of your life in order for you to be your best self.
               It helps you to explore ideas that feel safe and aligned with your value system.
-            </Typography>
-            <Typography variant="h4" className="text-secondary font-bold">
-              Coaching provides:
-            </Typography>
+            </div>
+            <div>
+              <Typography variant="h4" className="text-secondary font-bold">
+                Coaching provides:
+              </Typography>
+            </div>
+
             <div className="text-black pt-small">
               <ul className="list-disc pl-5 space-y-2">
                 <li>Own unique time </li>
@@ -57,24 +61,16 @@ function Desktop() {
                 <li>Practical tools</li>
               </ul>
             </div>
-            {/* <Typography variant="h4" className="text-secondary font-bold pt-large">
-            Assisting in
-          </Typography>
-          <div className="text-black pt-small">
-            <ul className="list-disc pl-5 space-y-2">
-              <li>Overcoming challenges</li>
-              <li>Being at peace</li>
-              <li>Achieving goals</li>
-              <li>Development personally and professionally</li>
-            </ul>
-          </div> */}
           </section>
         </div>
       </section>
       <section className="bg-customPrimary w-full p-large">
-        <Typography variant="h4" className="text-white font-bold text-center mb-large">
+        <div className="mb-large">
+          <Typography variant="h4" className="text-white font-bold text-center">
           Life Coaching for positive Change
         </Typography>
+        </div>
+        
         <div className="flex items-center justify-evenly">
           <div className="flex flex-col items-center justify-center">
             <img src="/images/well_being.png" className="h-14 w-14" />
