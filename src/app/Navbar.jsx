@@ -51,7 +51,7 @@ const Navbar = ({ currentSection }) => {
 
   return (
     <>
-      <nav className='w-full justify-between items-center shadow-md h-12 px-10 z-10 bg-white hidden lg:block' style={{ position: 'fixed', top: 0 }}>
+      <nav className='w-full flex justify-between items-center shadow-md h-12 px-10 z-10 bg-white' style={{ position: 'fixed', top: 0 }}>
         <img src='/images/Logo-cropped.png' className='h-10' alt='Logo' />
         <ul className='flex gap-10'>
           {["Home", "My Style", "Life Coaching", "CBT", "Background", "Contact"].map(tab => (
