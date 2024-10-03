@@ -24,10 +24,14 @@ export default function WhoAmI() {
       className="min-h-screen w-full py-12 bg-background"
     >
 
-      <section className="p-small md:p-medium lg:p-large flex">
+      <section className="p-small md:p-medium lg:p-large">
         {/* <img src="/images/CBT_image_1.png" className="h-[400px] w-[400px] rounded-lg float-left mr-small" /> */}
-        <div className="w-full aspect-square lg:h-[400px] lg:w-[400px] md:h-[300px] md:w-[300px] rounded-lg mr-large md:mr-medium sm:mr-0 flex items-center justify-center border-2 border-blue-500">
+        <div className="hidden md:h-[300px] md:w-[300px] lg:h-[400px] lg:w-[400px] rounded-lg mr-large md:mr-medium md:float-left sm:mr-0 md:flex md:items-center md:justify-center border-2 border-blue-500">
           Placeholder image for your photo
+        </div>
+
+        <div className="md:hidden w-1/3 aspect-square border-2 border-blue-500 rounded-lg float-left mr-small">
+          
         </div>
 
         {/* Text Content */}
