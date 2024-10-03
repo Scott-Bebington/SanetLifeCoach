@@ -157,7 +157,7 @@ function SmallHomepage() {
           onClick={() => { window.location.href = 'mailto:sanetnash"gmail.com'; }}
         />
         <LocalPhoneOutlinedIcon
-          sx={{ height: '40px' }}
+          sx={{ height: '80px' }}
           className='text-white hover:text-secondary rounded-full py-2 cursor-pointer'
           onClick={() => { window.location.href = 'tel:+27827820000'; }}
         />
