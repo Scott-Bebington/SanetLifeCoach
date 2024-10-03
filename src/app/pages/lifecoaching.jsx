@@ -32,7 +32,7 @@ function Desktop() {
         <div>
           <section className="px-large py-medium">
             <div className=" my-large">
-              <Typography variant="h3" className="text-customPrimary font-bold w-full" Life Coaching></Typography>
+              <Typography variant="h3" className="text-customPrimary font-bold w-full">Life Coaching</Typography>
             </div>
             <div className="mb-medium">
               Coaching is for every person who wants to evolve beyond traumatic experiences, discover their true purpose,
