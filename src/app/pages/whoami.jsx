@@ -64,7 +64,7 @@ function Desktop() {
       document.getElementById('industry-4').classList.remove('fade-in');
 
       setIsTransitioning(false);
-    }, 600); // This timeout matches the animation duration
+    }, 700); // This timeout matches the animation duration
   };
 
   const handleForwardClick = () => {
@@ -93,7 +93,7 @@ function Desktop() {
       //   // 
 
       setIsTransitioning(false);
-    }, 600); // This timeout matches the animation duration
+    }, 700); // This timeout matches the animation duration
   };
 
   return (

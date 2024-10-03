@@ -1,10 +1,15 @@
+import { Button } from '@mui/material';
 import React, { useState, useEffect } from 'react';
+
 
 const Navbar = ({ currentSection }) => {
   const [currentTab, setTab] = useState("Home");
 
   const handleTabClick = (event, tab) => {
-    event.preventDefault();
+
+    if (event != null) {
+      event.preventDefault();
+    }
 
     // Scroll to the corresponding section
     const sectionId = tab.toLowerCase().replace(/ /g, "-");
@@ -30,12 +35,21 @@ const Navbar = ({ currentSection }) => {
               className={`cursor-pointer ${currentTab === tab ? 'text-primary font-bold' : 'text-gray-600'} hover:text-primary`}
               onClick={(e) => handleTabClick(e, tab)}
               aria-current={currentTab === tab ? 'page' : undefined}
+              style={{ textTransform: 'capitalize' }}
             >
-              {tab}
+              {tab.toLowerCase()}
             </button>
           </li>
         ))}
       </ul>
+      <Button
+        variant='contained'
+        className='bg-primary hover:bg-secondary p-1 px-2'
+        onClick={(e) => handleTabClick(null, "Contact")}
+        style={{ textTransform: 'capitalize' }}
+      >
+        Get Started
+      </Button>
     </nav>
   );
 };
