@@ -35,11 +35,11 @@ function Desktop() {
           <img src="/images/Contact_image.png" className="aspect-video w-full rounded-lg mb-medium min-h-[250px]" />
           <Divider className="text-secondary">Contact Details</Divider>
           <Typography variant="h6" className="flex items-center my-small">
-            <EmailOutlinedIcon className="mr-small text-primary" />
+            <EmailOutlinedIcon className="mr-small text-customPrimary" />
             Email-here
           </Typography>
           <Typography variant="h6" className="flex items-center">
-            <LocalPhoneOutlinedIcon className="mr-small text-primary" />
+            <LocalPhoneOutlinedIcon className="mr-small text-customPrimary" />
             Phone-here
           </Typography>
 
@@ -86,7 +86,7 @@ function Desktop() {
             placeholder="Message"
             className="border border-gray-300 rounded-md p-2 w-full h-40"
           />
-          <button className="bg-primary text-white rounded-md p-2 w-full mt-4 h-14">
+          <button className="bg-customPrimary text-white rounded-md p-2 w-full mt-4 h-14">
             Send Message
           </button>
         </aside>
@@ -106,11 +106,11 @@ function Tablet() {
           <div className="w-full">
             <Divider className="text-secondary">Contact Details</Divider>
             <Typography variant="h6" className="flex items-center my-small">
-              <EmailOutlinedIcon className="mr-small text-primary" />
+              <EmailOutlinedIcon className="mr-small text-customPrimary" />
               Email-here
             </Typography>
             <Typography variant="h6" className="flex items-center">
-              <LocalPhoneOutlinedIcon className="mr-small text-primary" />
+              <LocalPhoneOutlinedIcon className="mr-small text-customPrimary" />
               Phone-here
             </Typography>
           </div>
@@ -161,7 +161,7 @@ function Tablet() {
           placeholder="Message"
           className="border border-gray-300 rounded-md p-2 w-full h-40"
         />
-        <button className="bg-primary text-white rounded-md p-2 w-full mt-4 h-14">
+        <button className="bg-customPrimary text-white rounded-md p-2 w-full mt-4 h-14">
           Send Message
         </button>
       </section>
@@ -202,7 +202,7 @@ function Mobile() {
           placeholder="Message"
           className="border border-gray-300 rounded-md p-2 w-full h-40"
         />
-        <button className="bg-primary text-white rounded-md p-2 w-full mt-4 h-14">
+        <button className="bg-customPrimary text-white rounded-md p-2 w-full mt-4 h-14">
           Send Message
         </button>
       </section>
@@ -211,11 +211,11 @@ function Mobile() {
         <div className="w-full">
           <Divider className="text-secondary">Contact Details</Divider>
           <Typography variant="h6" className="flex items-center my-small">
-            <EmailOutlinedIcon className="mr-small text-primary" />
+            <EmailOutlinedIcon className="mr-small text-customPrimary" />
             Email-here
           </Typography>
           <Typography variant="h6" className="flex items-center">
-            <LocalPhoneOutlinedIcon className="mr-small text-primary" />
+            <LocalPhoneOutlinedIcon className="mr-small text-customPrimary" />
             Phone-here
           </Typography>
         </div>

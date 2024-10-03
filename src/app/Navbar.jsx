@@ -57,7 +57,7 @@ const Navbar = ({ currentSection }) => {
           {["Home", "My Style", "Life Coaching", "CBT", "Background", "Contact"].map(tab => (
             <li key={tab}>
               <button
-                className={`cursor-pointer ${currentTab === tab ? 'text-primary font-bold' : 'text-gray-600'} hover:text-primary`}
+                className={`cursor-pointer ${currentTab === tab ? 'text-customPrimary font-bold' : 'text-gray-600'} hover:text-customPrimary`}
                 onClick={(e) => handleTabClick(e, tab)}
                 aria-current={currentTab === tab ? 'page' : undefined}
                 style={{ textTransform: 'capitalize' }}
@@ -69,7 +69,7 @@ const Navbar = ({ currentSection }) => {
         </ul>
         <Button
           variant='contained'
-          className='bg-primary hover:bg-secondary p-1 px-2'
+          className='bg-customPrimary hover:bg-secondary p-1 px-2'
           onClick={(e) => handleTabClick(null, "Contact")}
           style={{ textTransform: 'capitalize' }}
         >
@@ -83,15 +83,15 @@ const Navbar = ({ currentSection }) => {
           {/* <MenuIcon fontSize="large" /> */}
           <div
             id='navbar-top-bar'
-            className="w-6 h-[3px] bg-primary rounded-full"
+            className="w-6 h-[3px] bg-customPrimary rounded-full"
           ></div>
           <div
             id='navbar-middle-bar'
-            className="w-6 h-[3px] bg-primary rounded-full"
+            className="w-6 h-[3px] bg-customPrimary rounded-full"
           ></div>
           <div
             id='navbar-bottom-bar'
-            className="w-6 h-[3px] bg-primary rounded-full"
+            className="w-6 h-[3px] bg-customPrimary rounded-full"
           ></div>
         </button>
 
@@ -101,7 +101,7 @@ const Navbar = ({ currentSection }) => {
               {["Home", "My Style", "Life Coaching", "CBT", "Background", "Contact"].map(tab => (
                 <li key={tab}>
                   <button
-                    className={`block w-full text-left px-4 py-2 ${currentTab === tab ? 'text-primary font-bold' : 'text-gray-600'} hover:text-primary`}
+                    className={`block w-full text-left px-4 py-2 ${currentTab === tab ? 'text-customPrimary font-bold' : 'text-gray-600'} hover:text-customPrimary`}
                     onClick={(e) => {
                       handleTabClick(e, tab);
                       toggleMenu(); // Close menu after clicking

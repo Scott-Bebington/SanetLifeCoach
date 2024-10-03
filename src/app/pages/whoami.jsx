@@ -36,7 +36,7 @@ export default function WhoAmI() {
 
         {/* Text Content */}
         <aside className="min-h-[400px] md:min-h-[300px] sm:min-h-[200px]">
-          <Typography variant="h4" className="text-primary font-bold w-full mb-small">
+          <Typography variant="h4" className="text-customPrimary font-bold w-full mb-small">
             So who am i?
           </Typography>
           <Typography>
@@ -61,7 +61,7 @@ export default function WhoAmI() {
             <div
               key={index}
               id={`industry-${index}`}
-              className="industry w-56 h-40 bg-primary p-medium flex flex-shrink-0 items-center justify-center text-center rounded-lg text-white"
+              className="industry w-56 h-40 bg-customPrimary p-medium flex flex-shrink-0 items-center justify-center text-center rounded-lg text-white"
             >
               {industry}
             </div>

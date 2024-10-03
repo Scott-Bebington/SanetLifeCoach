@@ -32,7 +32,7 @@ function Desktop() {
         <img src="/images/CBT_image_1.png" className="rounded-lg w-2/5 h-[600px] mr-large" />
         <aside className="w-3/5 flex flex-col justify-around">
           <div>
-            <Typography variant="h3" className="text-primary font-bold w-full mb-medium">
+            <Typography variant="h3" className="text-customPrimary font-bold w-full mb-medium">
               What exactly is Cognitive Behavioral Therapy (CBT)?
             </Typography>
             <Typography>
@@ -105,7 +105,7 @@ function Tablet() {
 
         {/* Text Content */}
         <aside className="min-h-[400px]">
-          <Typography variant="h4" className="text-primary font-bold w-full mb-small">
+          <Typography variant="h4" className="text-customPrimary font-bold w-full mb-small">
             What exactly is Cognitive Behavioral Therapy (CBT)?
           </Typography>
           <Typography>
@@ -143,7 +143,7 @@ function Tablet() {
             the limiting ideas that you currently hold as valid and true.
           </Typography>
         </div>
-
+              
         <Typography variant="h5" className="text-tertiary font-bold mb-small mt-large">
           Seven characteristics of a fully functioning person &mdash; Carl Rogers
         </Typography>
@@ -164,7 +164,7 @@ function Mobile() {
   return (
     <>
       <section>
-        <Typography variant="h4" className="p-small text-primary font-bold w-full text-center mb-small">
+        <Typography variant="h4" className="p-small text-customPrimary font-bold w-full text-center mb-small">
           What exactly is Cognitive Behavioral Therapy (CBT)?
         </Typography>
         <Typography variant="body1" className="px-small w-full">

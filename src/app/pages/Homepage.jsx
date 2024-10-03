@@ -32,7 +32,7 @@ function LargeHomepage() {
     <>
       <div className='min-h-screen w-full flex items-center justify-evenly'>
         <aside className="h-[400px] w-3/5">
-          <Typography variant='h3' className="w-full text-primary font-bold mb-small">Transform Your Life with Expert Guidance</Typography>
+          <Typography variant='h3' className="w-full text-customPrimary font-bold mb-small">Transform Your Life with Expert Guidance</Typography>
           <Typography variant='h5' className='w-full text-secondary mb-small'>Empowering you to overcome obstacles, achieve your goals, and find lasting fulfillment.</Typography>
           <Typography variant='body1' className='w-full'>I&apos;m Sanet Nash, a certified Life Coach and Cognitive Behavioral Therapy Practitioner based in Bryanston, Johannesburg.
             With years of experience in helping individuals unlock their potential and overcome challenges,
@@ -44,7 +44,7 @@ function LargeHomepage() {
           Image placeholder of your choice
         </aside>
       </div>
-      <div className='absolute bottom-0 left-0 pt-small pr-medium rounded-tr-[100px] bg-primary z-0'>
+      <div className='absolute bottom-0 left-0 pt-small pr-medium rounded-tr-[100px] bg-customPrimary z-0'>
         <WhatsAppIcon
           className='text-white hover:text-green-500 rounded-full p-2 h-12 w-12 cursor-pointer'
           onClick={() => { window.location.href = 'https://wa.me/27827820000'; }}
@@ -80,7 +80,7 @@ function MediumHomepage() {
             Image placeholder of your choice
           </aside>
           <aside className="h-[300px] w-3/5">
-            <Typography variant='h3' className="w-full text-primary font-bold mb-small">Transform Your Life with Expert Guidance</Typography>
+            <Typography variant='h3' className="w-full text-customPrimary font-bold mb-small">Transform Your Life with Expert Guidance</Typography>
             <Typography variant='h5' className='w-full text-secondary mb-small'>Empowering you to overcome obstacles, achieve your goals, and find lasting fulfillment.</Typography>
 
             <CTA />
@@ -95,7 +95,7 @@ function MediumHomepage() {
 
 
       </div>
-      <div className='absolute bottom-0 left-0 pt-small pr-medium rounded-tr-[100px] bg-primary'>
+      <div className='absolute bottom-0 left-0 pt-small pr-medium rounded-tr-[100px] bg-customPrimary'>
         <WhatsAppIcon
           className='text-white hover:text-green-500 rounded-full p-2 h-12 w-12 cursor-pointer'
           onClick={() => { window.location.href = 'https://wa.me/27827820000'; }}
@@ -127,7 +127,7 @@ function SmallHomepage() {
     <>
       <div className='min-h-screen w-full flex flex-col justify-center px-small'>
         <div className='w-full aspect-square border-2 border-blue-500 rounded-full mb-small flex items-center justify-center'>Image</div>
-        <div className="text-subtitle text-primary font-bold mb-small">
+        <div className="text-subtitle text-customPrimary font-bold mb-small">
           Transform Your Life with Expert Guidance
         </div>
         <div className='text-secondary mb-small'>
@@ -135,9 +135,9 @@ function SmallHomepage() {
         </div>
         <CTA />
       </div>
-      <div className='absolute bottom-0 left-0 pt-small pr-medium rounded-tr-[100px] bg-primary z-0'>
+      <div className='absolute bottom-0 left-0 pt-small pr-medium rounded-tr-[100px] bg-customPrimary z-0'>
         <WhatsAppIcon
-          className='text-white hover:text-green-500 rounded-full p-2 h-10 w-10 cursor-pointer'
+          className='text-white hover:text-green-500 rounded-full p-2 h-[48px] w-10 cursor-pointer'
           onClick={() => { window.location.href = 'https://wa.me/27827820000'; }}
         />
         <InstagramIcon
@@ -173,7 +173,7 @@ function CTA() {
   };
 
   return (
-    <Button variant='contained' className='mt-medium bg-tertiary hover:bg-secondary' onClick={(e) => handleTabClick()}>Start your journey now</Button>
+    <Button variant='contained' sx={{ backgroundColor: "#75064a" }} className='mt-medium hover:bg-secondary' onClick={(e) => handleTabClick()}>Start your journey now</Button>
   );
 }
 

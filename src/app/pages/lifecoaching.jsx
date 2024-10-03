@@ -31,7 +31,7 @@ function Desktop() {
         <img src="/images/my_approach.png" className="h-screen" />
         <div>
           <section className="px-large py-medium">
-            <Typography variant="h3" className="text-primary font-bold w-full my-large">
+            <Typography variant="h3" className="text-customPrimary font-bold w-full my-large">
               Life Coaching
             </Typography>
             <Typography className="mb-medium">
@@ -71,7 +71,7 @@ function Desktop() {
           </section>
         </div>
       </section>
-      <section className="bg-primary w-full p-large">
+      <section className="bg-customPrimary w-full p-large">
         <Typography variant="h4" className="text-white font-bold text-center mb-large">
           Life Coaching for positive Change
         </Typography>
@@ -98,7 +98,7 @@ function Tablet() {
   return (
     <>
       <section className="px-large py-medium">
-        <Typography variant="h3" className="text-primary font-bold w-full text-center mb-small">
+        <Typography variant="h3" className="text-customPrimary font-bold w-full text-center mb-small">
           Life Coaching
         </Typography>
         <Typography>
@@ -186,7 +186,7 @@ function Mobile() {
   return (
     <>
       <section className="p-small">
-        <Typography variant="h4" className="text-primary font-bold w-full text-center mb-small">
+        <Typography variant="h4" className="text-customPrimary font-bold w-full text-center mb-small">
           Life Coaching
         </Typography>
         <Typography>

@@ -12,6 +12,7 @@ module.exports = {
         secondary: '#086878',
         tertiary: '#B53475',
         background: '#EFF3FC',
+        customPrimary: '#75064a',
       },
       margin: {
         'small': '10px',  

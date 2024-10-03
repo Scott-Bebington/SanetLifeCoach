@@ -34,7 +34,7 @@ function Desktop() {
 
         {/* Text Content */}
         <aside className="min-h-[400px] ">
-          <Typography variant="h4" className="text-primary font-bold">
+          <Typography variant="h4" className="text-customPrimary font-bold">
             My Style
           </Typography>
           <Typography sx={{ marginTop: '5px' }}>
@@ -50,7 +50,7 @@ function Desktop() {
             <br /><br />
             The combination of Life coaching and Cognitive Behavioral Therapy provides an in-depth approach when facilitating insight, providing supportive
             guidance as well as the encouragement to identify obstacles to self-acceptance. Thus, laying down new pathways for a more fulfilled life and goal achievement.
-            I also like to invest time on working with being <span className="text-primary">PRESENT</span>, it hasn&apos;t become a buzz word for nothing.
+            I also like to invest time on working with being <span className="text-customPrimary">PRESENT</span>, it hasn&apos;t become a buzz word for nothing.
             Due to modern technology, lifestyle, and other exterior influences, the practice of being present has become ever more challenging. A lack of or presence will hinder the most ultimate state of
             <span className="text-secondary"> MINDFULNESS.</span> By letting the past, society, or exterior influences define who we are, we often stay trapped by our own limiting beliefs.
           </Typography>
@@ -76,7 +76,7 @@ function Tablet() {
 
         {/* Text Content */}
         <aside>
-          <Typography variant="h4" className="text-primary font-bold">
+          <Typography variant="h4" className="text-customPrimary font-bold">
             My Style
           </Typography>
           <Typography sx={{ marginTop: '5px' }}>
@@ -92,7 +92,7 @@ function Tablet() {
             <br /><br />
             The combination of Life coaching and Cognitive Behavioral Therapy provides an in-depth approach when facilitating insight, providing supportive
             guidance as well as the encouragement to identify obstacles to self-acceptance. Thus, laying down new pathways for a more fulfilled life and goal achievement.
-            I also like to invest time on working with being <span className="text-primary">PRESENT</span>, it hasn&apos;t become a buzz word for nothing.
+            I also like to invest time on working with being <span className="text-customPrimary">PRESENT</span>, it hasn&apos;t become a buzz word for nothing.
             Due to modern technology, lifestyle, and other exterior influences, the practice of being present has become ever more challenging. A lack of or presence will hinder the most ultimate state of
             <span className="text-secondary"> MINDFULNESS.</span> By letting the past, society, or exterior influences define who we are, we often stay trapped by our own limiting beliefs.
           </Typography>
@@ -114,7 +114,7 @@ function Mobile() {
   return (
     <>
       <section className="p-small">
-        <Typography variant="h4" className="text-primary font-bold w-full text-center mb-small">
+        <Typography variant="h4" className="text-customPrimary font-bold w-full text-center mb-small">
           My Style
         </Typography>
         {/* Image placeholder div */}
@@ -145,7 +145,7 @@ function Mobile() {
               <br /><br />
               The combination of Life coaching and Cognitive Behavioral Therapy provides an in-depth approach when facilitating insight, providing supportive
               guidance as well as the encouragement to identify obstacles to self-acceptance. Thus, laying down new pathways for a more fulfilled life and goal achievement.
-              I also like to invest time on working with being <span className="text-primary">PRESENT</span>, it hasn&apos;t become a buzz word for nothing.
+              I also like to invest time on working with being <span className="text-customPrimary">PRESENT</span>, it hasn&apos;t become a buzz word for nothing.
               Due to modern technology, lifestyle, and other exterior influences, the practice of being present has become ever more challenging. A lack of or presence will hinder the most ultimate state of
               <span className="text-secondary"> MINDFULNESS.</span> By letting the past, society, or exterior influences define who we are, we often stay trapped by our own limiting beliefs.
               {checked && (
