@@ -157,7 +157,7 @@ function Mobile() {
         </aside>
       </section>
 
-      <Typography variant="h4" className="p-small text-tertiary w-full flex items-center justify-center text-center">
+      <Typography variant="h6" className="p-small text-tertiary w-full flex items-center justify-center text-center">
         DON&apos;T HOLD ONTO THINGS THAT DON&apos;T
         SERVE YOU &mdash; LET THEM GO!
       </Typography>

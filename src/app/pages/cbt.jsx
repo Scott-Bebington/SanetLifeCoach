@@ -100,8 +100,8 @@ function Desktop() {
 function Tablet() {
   return (
     <>
-      <section className="p-medium">
-        <img src="/images/CBT_image_1.png" className="h-[400px] w-[400px] rounded-lg float-left mr-small" />
+      <section className="p-medium flex">
+        <img src="/images/CBT_image_1.png" className="h-[400px] w-[400px] rounded-lg mr-small" />
 
         {/* Text Content */}
         <aside className="min-h-[400px]">
@@ -111,34 +111,22 @@ function Tablet() {
           <Typography>
             CBT is a psychology based personal growth discipline that offers thought provoking insights
             into the relationship between emotions, habits, perspectives, attitudes and behaviours of the human mind.
-            <br /> <br />
-            Through a process of unblocking limiting beliefs, biases and unhelpful thoughts. I help my clients
-            become self-aware, to focus on their abilities and strengths, identifying where they are now, and
-            where they would like to be. We concentrate on skills to help you deal with the ever-changing and
-            challenging world we live in today.
           </Typography>
+          <div>
+            <Typography variant="h4" className="text-secondary font-bold w-full mb-medium mt-large">
+              The Purpose of CBT
+            </Typography>
+            <Typewriter
+              options={{
+                strings: ['Understanding your mind', 'Raise self-awareness', 'Shape inner resilience', 'Enhance mental well-being', 'Stress reduction', 'Confidence', 'Motivation', 'Life transitions'],
+                autoStart: true,
+                loop: true,
+                delay: 50,
+              }}
+            />
+          </div>
         </aside>
       </section>
-
-      <section className="w-full px-medium flex justify-between">
-        <aside className="min-h-[400px]">
-          <Typography variant="h4" className="text-secondary font-bold w-full my-small">
-            The Purpose of CBT
-          </Typography>
-          <ul className="text-tertiary list-disc pl-5 space-y-2">
-            <li>Understanding your mind</li>
-            <li>Raise self-awareness</li>
-            <li>Shape inner resilience</li>
-            <li>Enhance mental well-being</li>
-            <li>Stress reduction</li>
-            <li>Confidence</li>
-            <li>Motivation</li>
-            <li>Life transitions</li>
-          </ul>
-        </aside>
-        <img src="/images/CBT_image_2.png" className="h-[320px] w-[450px] rounded-lg float-left mr-small" />
-      </section>
-
 
       <section className="px-medium">
         <div>
@@ -159,7 +147,7 @@ function Tablet() {
         <Typography variant="h5" className="text-tertiary font-bold mb-small mt-large">
           Seven characteristics of a fully functioning person &mdash; Carl Rogers
         </Typography>
-        <Typography variant="h6" className="font-bold">
+        <Typography variant="body1" className="">
           Growing openness to Experience | Living life Existentially | Increased trust in self | Freedom of choice | Raw creativity | Consistency and Constructiveness | A purpose orientated life
         </Typography>
       </section>
@@ -204,7 +192,7 @@ function Mobile() {
         <Typography variant="h4" className="text-secondary font-bold w-full my-small">
           The Purpose of CBT
         </Typography>
-        <ul className="text-tertiary list-disc pl-5 space-y-2">
+        <ul className="text-black list-disc pl-5 space-y-2">
           <li>Understanding your mind</li>
           <li>Raise self-awareness</li>
           <li>Shape inner resilience</li>

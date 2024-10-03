@@ -12,21 +12,25 @@ body {
 /* Custom scrollbar for Webkit browsers */
 ::-webkit-scrollbar {
   width: 12px;
+  height: 12px;
   /* Width of the scrollbar */
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #fffefe;
+  border-radius: 10px;
   /* Background color of the scrollbar track */
 }
 
 ::-webkit-scrollbar-thumb {
   background: #888;
+  border-radius: 10px;
   /* Color of the scrollbar thumb */
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+  border-radius: 10px;
   /* Color of the scrollbar thumb on hover */
 }
 
@@ -134,5 +138,123 @@ body {
 
   100% {
     transform: translateX(264px);
+  }
+}
+
+/* Navbar animations */
+.rotate-navbar-top {
+  animation: rotateNavbarTop 0.6s forwards;
+}
+
+.rotate-navbar-middle {
+  animation: rotateNavbarMiddle 0.6s forwards;
+}
+
+.rotate-navbar-bottom {
+  animation: rotateNavbarBottom 0.6s forwards;
+}
+
+@keyframes rotateNavbarTop {
+  0% {
+    transform: rotate(0deg) translateY(0);
+    /* No rotation or translation initially */
+  }
+
+  /* Rotate first from 0% to 50%, no translation yet */
+  50% {
+    transform: rotate(0deg) translateY(5px) translateX(5px);
+    /* Rotate 45 degrees */
+  }
+
+  /* Then move down 5px after the rotation is done */
+  100% {
+    transform: rotate(45deg) translateY(5px) translateX(5px);
+    /* Final translation downwards */
+  }
+}
+
+@keyframes rotateNavbarMiddle {
+  0% {
+    transform: rotate(0deg);
+    /* No rotation or translation initially */
+  }
+
+  /* Then move down 5px after the rotation is done */
+  100% {
+    transform: rotate(-45deg);
+    /* Final translation downwards */
+  }
+}
+
+@keyframes rotateNavbarBottom {
+  0% {
+    transform: rotate(0deg) translateY(0);
+    /* No rotation or translation initially */
+  }
+
+  /* Rotate first from 0% to 50%, no translation yet */
+  50% {
+    transform: rotate(0deg) translateY(-5px) translateX(-5px);
+    /* Rotate 45 degrees */
+  }
+
+  /* Then move down 5px after the rotation is done */
+  100% {
+    transform: rotate(45deg) translateY(-5px) translateX(-5px);
+    /* Final translation downwards */
+  }
+}
+
+/* Reverse Navbar animations */
+.reverse-navbar-top {
+  animation: reverseRotateNavbarTop 0.6s forwards;
+}
+
+.reverse-navbar-middle {
+  animation: reverseRotateNavbarMiddle 0.6s forwards;
+}
+
+.reverse-navbar-bottom {
+  animation: reverseRotateNavbarBottom 0.6s forwards;
+}
+
+/* Keyframes for reversing the top */
+@keyframes reverseRotateNavbarTop {
+  0% {
+    transform: rotate(45deg) translateY(5px) translateX(5px);
+  }
+
+  50% {
+    transform: rotate(0deg) translateY(5px) translateX(5px);
+  }
+
+  100% {
+    transform: rotate(0deg) translateY(0);
+  }
+}
+
+/* Keyframes for reversing the middle */
+@keyframes reverseRotateNavbarMiddle {
+  0% {
+    transform: rotate(-45deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Keyframes for reversing the bottom */
+@keyframes reverseRotateNavbarBottom {
+  0% {
+    transform: rotate(45deg) translateY(-5px) translateX(-5px);
+  }
+
+  50% {
+    transform: rotate(0deg) translateY(-5px) translateX(-5px);
+  }
+
+  100% {
+    transform: rotate(0deg) translateY(0);
   }
 }

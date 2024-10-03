@@ -44,7 +44,7 @@ function LargeHomepage() {
           Image placeholder of your choice
         </aside>
       </div>
-      <div className='absolute bottom-0 left-0 pt-small pr-medium rounded-tr-[100px] bg-primary'>
+      <div className='absolute bottom-0 left-0 pt-small pr-medium rounded-tr-[100px] bg-primary z-0'>
         <WhatsAppIcon
           className='text-white hover:text-green-500 rounded-full p-2 h-12 w-12 cursor-pointer'
           onClick={() => { window.location.href = 'https://wa.me/27827820000'; }}
@@ -75,7 +75,7 @@ function MediumHomepage() {
   return (
     <>
       <div className='min-h-screen w-full flex flex-col pt-24'>
-        <section className='flex items-center justify-evenly'>
+        <section className='flex items-center justify-between px-medium'>
           <aside className='h-[300px] w-[300px] border-2 border-blue-500 rounded-lg flex items-center justify-center'>
             Image placeholder of your choice
           </aside>
@@ -87,7 +87,7 @@ function MediumHomepage() {
           </aside>
         </section>
         <section>
-          <Typography variant='body1' className='w-full'>I&apos;m Sanet Nash, a certified Life Coach and Cognitive Behavioral Therapy Practitioner based in Bryanston, Johannesburg.
+          <Typography variant='body1' className='w-full p-medium'>I&apos;m Sanet Nash, a certified Life Coach and Cognitive Behavioral Therapy Practitioner based in Bryanston, Johannesburg.
             With years of experience in helping individuals unlock their potential and overcome challenges,
             I&apos;m here to guide you on your path to personal growth.
           </Typography>
@@ -95,25 +95,25 @@ function MediumHomepage() {
 
 
       </div>
-      <div className='absolute bottom-[10px] left-[10px]'>
+      <div className='absolute bottom-0 left-0 pt-small pr-medium rounded-tr-[100px] bg-primary'>
         <WhatsAppIcon
-          className='text-green-500 rounded-full p-2 h-12 w-12 cursor-pointer'
+          className='text-white hover:text-green-500 rounded-full p-2 h-12 w-12 cursor-pointer'
           onClick={() => { window.location.href = 'https://wa.me/27827820000'; }}
         />
         <InstagramIcon
-          className='text-red-500 rounded-full py-2 h-12 w-12 cursor-pointer'
+          className='text-white hover:text-red-500 rounded-full py-2 h-12 w-12 cursor-pointer'
           onClick={() => { window.location.href = 'https://www.instagram.com/sanetnash/'; }}
         />
         <FacebookOutlinedIcon
-          className='text-blue-500 rounded-full py-2 h-12 w-12 cursor-pointer'
+          className='text-white hover:text-blue-500 rounded-full py-2 h-12 w-12 cursor-pointer'
           onClick={() => { window.location.href = 'https://www.facebook.com/SanetNashLifeCoach/'; }}
         />
         <EmailOutlinedIcon
-          className='text-primary rounded-full py-2 h-12 w-12 cursor-pointer'
+          className='text-white hover:text-tertiary rounded-full py-2 h-12 w-12 cursor-pointer'
           onClick={() => { window.location.href = 'mailto:sanetnash"gmail.com'; }}
         />
         <LocalPhoneOutlinedIcon
-          className='text-secondary rounded-full py-2 h-12 w-12 cursor-pointer'
+          className='text-white hover:text-secondary rounded-full py-2 h-12 w-12 cursor-pointer'
           onClick={() => { window.location.href = 'tel:+27827820000'; }}
         />
       </div>
@@ -124,22 +124,41 @@ function MediumHomepage() {
 
 function SmallHomepage() {
   return (
-    <div className='min-h-screen w-full flex flex-col justify-center px-large'>
-      <div className="text-subtitle text-primary font-bold mb-small">
-        Transform Your Life with Expert Guidance
-      </div>
-      <div className='text-secondary mb-small'>
-        Empowering you to overcome obstacles, achieve your goals, and find lasting fulfillment.
-      </div>
-
-      <div className=''>
-        <div>
-          I&apos;m Sanet Nash, a certified Life Coach and Cognitive Behavioral Therapy Practitioner based in Bryanston, Johannesburg.
-          With years of experience in helping individuals unlock their potential and overcome challenges, I&apos;m here to guide you on
-          your path to personal growth.
+    <>
+      <div className='min-h-screen w-full flex flex-col justify-center px-small'>
+        <div className='w-full aspect-square border-2 border-blue-500 rounded-full mb-small flex items-center justify-center'>Image</div>
+        <div className="text-subtitle text-primary font-bold mb-small">
+          Transform Your Life with Expert Guidance
         </div>
+        <div className='text-secondary mb-small'>
+          Empowering you to overcome obstacles, achieve your goals, and find lasting fulfillment.
+        </div>
+        <CTA />
       </div>
-    </div>
+      <div className='absolute bottom-0 left-0 pt-small pr-medium rounded-tr-[100px] bg-primary z-0'>
+        <WhatsAppIcon
+          className='text-white hover:text-green-500 rounded-full p-2 h-10 w-10 cursor-pointer'
+          onClick={() => { window.location.href = 'https://wa.me/27827820000'; }}
+        />
+        <InstagramIcon
+          className='text-white hover:text-red-500 rounded-full py-2 h-10 w-10 cursor-pointer'
+          onClick={() => { window.location.href = 'https://www.instagram.com/sanetnash/'; }}
+        />
+        <FacebookOutlinedIcon
+          className='text-white hover:text-blue-500 rounded-full py-2 h-10 w-10 cursor-pointer'
+          onClick={() => { window.location.href = 'https://www.facebook.com/SanetNashLifeCoach/'; }}
+        />
+        <EmailOutlinedIcon
+          className='text-white hover:text-tertiary rounded-full py-2 h-10 w-10 cursor-pointer'
+          onClick={() => { window.location.href = 'mailto:sanetnash"gmail.com'; }}
+        />
+        <LocalPhoneOutlinedIcon
+          className='text-white hover:text-secondary rounded-full py-2 h-10 w-10 cursor-pointer'
+          onClick={() => { window.location.href = 'tel:+27827820000'; }}
+        />
+      </div>
+    </>
+
   );
 }
 
