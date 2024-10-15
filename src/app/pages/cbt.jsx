@@ -25,6 +25,17 @@ export default function CBT() {
 }
 
 function Desktop() {
+
+  const characteristics = [
+    'Growing openness to Experience',
+    'Living life Existentially',
+    'Increased trust in self',
+    'Freedom of choice',
+    'Raw creativity',
+    'Consistency and Constructiveness',
+    'A purpose orientated life',
+  ];
+
   return (
     <>
       <section className="px-large py-medium flex">
@@ -81,16 +92,24 @@ function Desktop() {
             </Typography>
           </div>
 
-          <Typography variant="h5" className="text-tertiary font-bold mb-small mt-large">
+          <Typography variant="h5" className="text-tertiary font-bold mb-small mt-large text-center">
             Seven characteristics of a fully functioning person &mdash; Carl Rogers
           </Typography>
         </aside>
       </section>
 
       <section>
-        <Typography variant="h6" className="px-large py-medium font-bold">
-          Growing openness to Experience | Living life Existentially | Increased trust in self | Freedom of choice | Raw creativity | Consistency and Constructiveness | A purpose orientated life
-        </Typography>
+        <div className="flex overflow-x-auto space-x-10 w-full pb-2 px-large justify-center scrollbar-hide">
+          {characteristics.map((characteristic, index) => (
+            <div
+              key={index}
+              id={`industry-${index}`}
+              className="industry w-56 h-24 bg-customPrimary p-medium flex flex-shrink-0 items-center justify-center text-center rounded-lg text-white"
+            >
+              {characteristic}
+            </div>
+          ))}
+        </div>
       </section>
     </>
 

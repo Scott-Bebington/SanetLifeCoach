@@ -60,15 +60,19 @@ export default function WhoAmI() {
           Industries i have been involved in
         </Typography>
         <div className="flex overflow-x-auto space-x-10 w-full pb-2 scrollbar-hide">
-          {industries.map((industry, index) => (
-            <div
-              key={index}
-              id={`industry-${index}`}
-              className="industry w-56 h-40 bg-customPrimary p-medium flex flex-shrink-0 items-center justify-center text-center rounded-lg text-white"
-            >
-              {industry}
-            </div>
+        <ul className="list-disc pl-5 space-y-2">
+            {industries.map((industry, index) => (
+            // <div
+            //   key={index}
+            //   id={`industry-${index}`}
+            //   className="industry w-56 h-40 bg-customPrimary p-medium flex flex-shrink-0 items-center justify-center text-center rounded-lg text-white"
+            // >
+            //   {industry}
+            // </div>
+              <li>{industry}</li>
           ))}
+          </ul>
+
         </div>
       </section>
 
