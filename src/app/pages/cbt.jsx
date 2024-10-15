@@ -35,7 +35,7 @@ function Desktop() {
             <Typography variant="h3" className="text-customPrimary font-bold w-full mb-medium">
               What exactly is Cognitive Behavioral Therapy (CBT)?
             </Typography>
-            <Typography>
+            <Typography variant='body1'>
               CBT is a psychology based personal growth discipline that offers thought provoking insights
               into the relationship between emotions, habits, perspectives, attitudes and behaviours of the human mind.
               <br /> <br />
@@ -70,7 +70,7 @@ function Desktop() {
             <Typography variant="h4" className="text-secondary font-bold mb-small">
               Benefits of CBT
             </Typography>
-            <Typography>
+            <Typography variant='body1'>
               CBT offers a solid base for self-definition where you can evaluate your outlook on life.
               The process will facilitate your personal growth as you learn to make wise decisions around
               how you allocate your time, energy, and resources.
@@ -108,7 +108,7 @@ function Tablet() {
           <Typography variant="h4" className="text-customPrimary font-bold w-full mb-small">
             What exactly is Cognitive Behavioral Therapy (CBT)?
           </Typography>
-          <Typography>
+          <Typography variant='body1'>
             CBT is a psychology based personal growth discipline that offers thought provoking insights
             into the relationship between emotions, habits, perspectives, attitudes and behaviours of the human mind.
           </Typography>
@@ -133,7 +133,7 @@ function Tablet() {
           <Typography variant="h4" className="text-secondary font-bold mb-small">
             Benefits of CBT
           </Typography>
-          <Typography>
+          <Typography variant='body1'>
             CBT offers a solid base for self-definition where you can evaluate your outlook on life.
             The process will facilitate your personal growth as you learn to make wise decisions around
             how you allocate your time, energy, and resources.

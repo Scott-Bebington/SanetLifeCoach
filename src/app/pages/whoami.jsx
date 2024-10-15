@@ -37,12 +37,12 @@ export default function WhoAmI() {
         {/* Text Content */}
         <aside className="sm:min-h-[200px] md:min-h-[300px] lg:min-h-[400px]">
           <div className=" mb-small">
-            <Typography variant="h4" className="text-customPrimary font-bold w-full">
-              So who am i?
+            <Typography variant="h3" className="text-customPrimary font-bold w-full">
+              So who am I?
             </Typography>
           </div>
 
-          <Typography>
+          <Typography variant="body1">
             I am a 55 year-old divorced woman. A mother of two young men aged 21 & 23.
             I was raised in a small-town community by my parents and one of three siblings.
             I spent my Highschool career in boarding school in the quaint town of Potchefstroom,

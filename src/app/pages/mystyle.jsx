@@ -34,7 +34,7 @@ function Desktop() {
 
         {/* Text Content */}
         <aside className="min-h-[400px] ">
-          <Typography variant="h4" className="text-customPrimary font-bold">
+          <Typography variant="h3" className="text-customPrimary font-bold">
             My Style
           </Typography>
           <Typography sx={{ marginTop: '5px' }}>
@@ -57,7 +57,7 @@ function Desktop() {
         </aside>
       </section>
       <Typography variant="h4" className="p-large text-tertiary w-full flex items-center justify-center text-center">
-        DON&apos;T HOLD ONTO THINGS THAT DON&apos;T SERVE YOU &mdash; LET THEM GO!
+        DON&apos;T HOLD ONTO THINGS THAT DON&apos;T SERVE YOU
       </Typography>
 
     </>
@@ -79,7 +79,7 @@ function Tablet() {
           <Typography variant="h4" className="text-customPrimary font-bold">
             My Style
           </Typography>
-          <Typography sx={{ marginTop: '5px' }}>
+          <Typography variant="body1" sx={{ marginTop: '5px' }}>
             I assist my clients in navigating challenges, fostering a safe, nurturing environment for self-forgiveness,
             self-awareness, self-management and self-love. My strength-based process focuses on shifting client&apos;s perspective,
             allowing exploration of new insights into the self, identifying the barriers keeping them stuck and steering them
@@ -101,7 +101,7 @@ function Tablet() {
 
       <Typography variant="h4" className="p-medium text-tertiary w-full flex items-center justify-center text-center">
         DON&apos;T HOLD ONTO THINGS THAT DON&apos;T
-        SERVE YOU &mdash; LET THEM GO!
+        SERVE YOU
       </Typography>
     </>
   );
@@ -125,7 +125,7 @@ function Mobile() {
         {/* Text Content */}
         <aside>
 
-          <Typography sx={{ marginTop: '5px' }}>
+          <Typography variant="body1" sx={{ marginTop: '5px' }}>
             I assist my clients in navigating challenges, fostering a safe, nurturing environment for self-forgiveness,
             self-awareness, self-management and self-love. My strength-based process focuses on shifting client&apos;s perspective,
             allowing exploration of new insights into the self, identifying the barriers keeping them stuck and steering them
@@ -137,7 +137,7 @@ function Mobile() {
 
           </Typography>
           {checked && (
-            <Typography>
+            <Typography variant="body1">
               Groundwork is laid for ongoing growth, equipped with skills for constructive change.
               My fascination and passion for people and how we think, react, and operate has brought me down a path of ongoing self-exploration
               and has helped me to develop a deep understanding, insight, and acceptance of myself. This has inspired me to follow a deep desire to
@@ -158,8 +158,7 @@ function Mobile() {
       </section>
 
       <Typography variant="h6" className="p-small text-tertiary w-full flex items-center justify-center text-center">
-        DON&apos;T HOLD ONTO THINGS THAT DON&apos;T
-        SERVE YOU &mdash; LET THEM GO!
+        DON&apos;T HOLD ONTO THINGS THAT DON&apos;T SERVE YOU
       </Typography>
     </>
   )

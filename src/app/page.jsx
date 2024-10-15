@@ -7,6 +7,55 @@ import LifeCoaching from "./pages/lifecoaching";
 import CBT from "./pages/cbt";
 import WhoAmI from "./pages/whoami";
 import Contact from "./pages/contact";
+import Head from "next/head";
+
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { Dancing_Script, Caveat, M_PLUS_Rounded_1c } from "next/font/google";
+
+// Initialize the Dancing Script font
+const dancingScript = Dancing_Script({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+});
+
+const caveat = Caveat({
+  // weight: ['400', '700'],
+  subsets: ['latin'],
+});
+
+const mPlusRounded1c = M_PLUS_Rounded_1c({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+});
+
+// Create a custom MUI theme
+const theme = createTheme({
+  li: {
+    fontFamily: mPlusRounded1c.style.fontFamily,
+  },
+  typography: {
+    h3: {
+      fontSize: '56px',
+      fontFamily: caveat.style.fontFamily,
+    },
+    h4: {
+      fontSize: '40px',
+      fontFamily: caveat.style.fontFamily,
+    },
+    h5: {
+      fontSize: '24px',
+      fontFamily: mPlusRounded1c.style.fontFamily,
+    },
+    h6: {
+      fontSize: '20px',
+      fontFamily: mPlusRounded1c.style.fontFamily,
+    },
+    body1: {
+      fontSize: '17px',
+      fontFamily: mPlusRounded1c.style.fontFamily,
+    },
+  },
+});
 
 export default function Home() {
   const sectionRefs = useRef([]);
@@ -41,27 +90,30 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex flex-col">
-      {/* Pass the current section to the Navbar */}
-      <Navbar currentSection={currentSection} />
-      <div ref={(el) => (sectionRefs.current[0] = el)} data-name="Home">
-        <Homepage />
-      </div>
-      <div ref={(el) => (sectionRefs.current[1] = el)} data-name="My Style">
-        <MyStyle />
-      </div>
-      <div ref={(el) => (sectionRefs.current[2] = el)} data-name="Life Coaching">
-        <LifeCoaching />
-      </div>
-      <div ref={(el) => (sectionRefs.current[3] = el)} data-name="CBT">
-        <CBT />
-      </div>
-      <div ref={(el) => (sectionRefs.current[4] = el)} data-name="Background">
-        <WhoAmI />
-      </div>
-      <div ref={(el) => (sectionRefs.current[5] = el)} data-name="Contact">
-        <Contact />
-      </div>
-    </main>
+    <ThemeProvider theme={theme}>
+      <main className="flex flex-col">
+        {/* Pass the current section to the Navbar */}
+        <Navbar currentSection={currentSection} />
+        <div ref={(el) => (sectionRefs.current[0] = el)} data-name="Home">
+          <Homepage />
+        </div>
+        <div ref={(el) => (sectionRefs.current[1] = el)} data-name="My Style">
+          <MyStyle />
+        </div>
+        <div ref={(el) => (sectionRefs.current[2] = el)} data-name="Life Coaching">
+          <LifeCoaching />
+        </div>
+        <div ref={(el) => (sectionRefs.current[3] = el)} data-name="CBT">
+          <CBT />
+        </div>
+        <div ref={(el) => (sectionRefs.current[4] = el)} data-name="Background">
+          <WhoAmI />
+        </div>
+        <div ref={(el) => (sectionRefs.current[5] = el)} data-name="Contact">
+          <Contact />
+        </div>
+      </main>
+    </ThemeProvider>
+
   );
 }

@@ -28,24 +28,24 @@ function Desktop() {
   return (
     <>
       <section className="flex">
-        <img src="/images/my_approach.png" className="h-screen" />
+        <img src="/images/my_approach.png" className="h-screen w-1/2" />
         <div>
           <section className="px-large py-medium">
             <div className=" my-large">
               <Typography variant="h3" className="text-customPrimary font-bold w-full">Life Coaching</Typography>
             </div>
-            <div className="mb-medium">
+            <Typography variant="body1" className="mb-medium">
               Coaching is for every person who wants to evolve beyond traumatic experiences, discover their true purpose,
               achieve goals and improve mental wellness. Whether you&apos;re feeling stuck, overwhelmed, or simply ready for change,
               I&apos;m here to guide you through your transformation. By identifying where growth is desired, setting realistic goals
               and objectives and being accountable, you will be able to reach a place of positive self-awareness that will lead
               to fulfilment in many aspects or areas of your life.
-            </div>
+            </Typography>
 
-            <div className="mb-large">
+            <Typography variant="body1" className="mb-large">
               Life coaching helps you make positive changes in areas of your life in order for you to be your best self.
               It helps you to explore ideas that feel safe and aligned with your value system.
-            </div>
+            </Typography>
             <div>
               <Typography variant="h4" className="text-secondary font-bold">
                 Coaching provides:

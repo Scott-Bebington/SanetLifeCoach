@@ -6,6 +6,14 @@ import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
 
+// import { Dancing_Script } from "next/font/google";
+
+// Initialize the font
+// const dancingScript = Dancing_Script({
+//   weight: ['400', '700'],
+//   subsets: ['latin']
+// });
+
 export default function Homepage() {
 
   return (
@@ -31,15 +39,36 @@ function LargeHomepage() {
   return (
     <>
       <div className='min-h-screen w-full flex items-center justify-evenly'>
-        <aside className="h-[400px] w-3/5">
-          <Typography variant='h3' className="w-full text-customPrimary font-bold mb-small">Transform Your Life with Expert Guidance</Typography>
-          <Typography variant='h5' className='w-full text-secondary mb-small'>Empowering you to overcome obstacles, achieve your goals, and find lasting fulfillment.</Typography>
-          <Typography variant='body1' className='w-full'>I&apos;m Sanet Nash, a certified Life Coach and Cognitive Behavioral Therapy Practitioner based in Bryanston, Johannesburg.
-            With years of experience in helping individuals unlock their potential and overcome challenges,
-            I&apos;m here to guide you on your path to personal growth.
-          </Typography>
-          <CTA />
+        <aside className="w-3/5 flex">
+
+          
+          <div>
+            <Typography
+              variant='h3'
+              className={`w-full text-customPrimary font-bold mb-small`}
+            >
+              Transform Your Life
+            </Typography>
+            <Typography
+              variant='h5'
+              className='w-full text-secondary mb-small'
+            >
+              Empowering you to overcome obstacles, achieve your goals, and find lasting fulfillment.
+            </Typography>
+            <Typography variant='body1' className='w-full'>
+              I&apos;m Sanet Nash, a certified Life Coach and Cognitive Behavioral Therapy Practitioner based in Bryanston, Johannesburg. With years of experience in helping individuals unlock their potential and overcome challenges, I&apos;m here to guide you on your path to personal growth.
+            </Typography>
+            <img src='/images/Logo.jpg' className='h-[250px]' />
+            <CTA />
+          </div>
+          {/* <div className='mt-medium space-y-5'>
+            
+            
+          </div> */}
         </aside>
+
+
+
         <aside className='h-[400px] w-[400px] border-2 border-blue-500 rounded-full flex items-center justify-center'>
           Image placeholder of your choice
         </aside>
@@ -188,7 +217,7 @@ function CTA() {
   };
 
   return (
-    <Button variant='contained' sx={{ backgroundColor: "#75064a" }} className='mt-medium hover:bg-secondary' onClick={(e) => handleTabClick()}>Start your journey now</Button>
+    <Button variant='contained' sx={{ backgroundColor: "#75064a" }} className='hover:bg-secondary h-fit' onClick={(e) => handleTabClick()}>Start your journey now</Button>
   );
 }
 
