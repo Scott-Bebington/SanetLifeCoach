@@ -92,7 +92,7 @@ function Desktop() {
             </Typography>
           </div>
 
-          <Typography variant="h5" className="text-tertiary font-bold mb-small mt-large text-center">
+          <Typography variant="h5" className="text-tertiary font-bold mb-[10px] mt-[50px] text-center">
             Seven characteristics of a fully functioning person &mdash; Carl Rogers
           </Typography>
         </aside>
