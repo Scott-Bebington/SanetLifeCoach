@@ -87,7 +87,8 @@ function Desktop() {
             className="border border-gray-300 rounded-md p-2 w-full h-40"
           />
           <Button 
-            className="text-white rounded-md p-2 w-full mt-4 h-14"
+            className="text-white rounded-md p-2 w-full h-14"
+            sx={{ marginTop: "16px" }}
             onClick={() => alert("Message sent successfully")}
           >
             Send Message
