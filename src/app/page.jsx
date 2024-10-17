@@ -38,6 +38,7 @@ const theme = createTheme({
           '&:hover': {
             backgroundColor: '#086878',
           },
+          color: 'white',
         },
       },
     },
@@ -55,15 +56,15 @@ const theme = createTheme({
       fontFamily: caveat.style.fontFamily,
     },
     h5: {
-      fontSize: '24px',
-      fontFamily: mPlusRounded1c.style.fontFamily,
-    },
-    h6: {
       fontSize: '20px',
       fontFamily: mPlusRounded1c.style.fontFamily,
     },
+    h6: {
+      fontSize: '18px',
+      fontFamily: mPlusRounded1c.style.fontFamily,
+    },
     body1: {
-      fontSize: '17px',
+      fontSize: '16px',
       fontFamily: mPlusRounded1c.style.fontFamily,
     },
   },
