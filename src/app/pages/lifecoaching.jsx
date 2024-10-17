@@ -113,7 +113,7 @@ function Desktop() {
             <Typography variant="h4" className="text-secondary font-bold">
               Coaching provides:
             </Typography>
-            <div className="text-black pt-small">
+            <div className="text-black pt-small pb-large">
               <ul className="list-disc pl-5 space-y-2">
                 <li>Own unique time </li>
                 <li>Structured support</li>
@@ -122,11 +122,8 @@ function Desktop() {
                 <li>Practical tools</li>
               </ul>
             </div>
-          </div>
-
-          <div>
             <Typography variant="h4" className="text-secondary font-bold">
-            Assisting in
+              Assisting in
             </Typography>
             <div className="text-black pt-small">
               <ul className="list-disc pl-5 space-y-2">
@@ -137,7 +134,6 @@ function Desktop() {
               </ul>
             </div>
           </div>
-
         </aside>
 
       </section>
