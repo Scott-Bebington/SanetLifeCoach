@@ -60,7 +60,7 @@ const Navbar = ({ currentSection }) => {
                 className={`cursor-pointer ${currentTab === tab ? 'text-customPrimary font-bold' : 'text-gray-600'} hover:text-customPrimary`}
                 onClick={(e) => handleTabClick(e, tab)}
                 aria-current={currentTab === tab ? 'page' : undefined}
-                style={{ textTransform: 'capitalize' }}
+                style={{ textTransform: tab === "CBT" ? 'uppercase' : 'capitalize' }}
               >
                 {tab.toLowerCase()}
               </button>
@@ -108,7 +108,7 @@ const Navbar = ({ currentSection }) => {
                       toggleMenu(); // Close menu after clicking
                     }}
                     aria-current={currentTab === tab ? 'page' : undefined}
-                    style={{ textTransform: 'capitalize' }}
+                    style={{ textTransform: tab === "CBT" ? 'uppercase' : 'capitalize' }}
                   >
                     {tab.toLowerCase()}
                   </button>

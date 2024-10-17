@@ -32,11 +32,11 @@ function Desktop() {
     },
     {
       title: "Address your stress and anxiety",
-      icon: "/images/stress_anxiety.png",
+      icon: "/images/stress.png",
     },
     {
       title: "Enhance your self-belief",
-      icon: "/images/self_belief.png",
+      icon: "/images/self-acceptance.png",
     },
     {
       title: "Feel more confident",
@@ -44,19 +44,19 @@ function Desktop() {
     },
     {
       title: "Lead with authority",
-      icon: "/images/authority.png",
+      icon: "/images/leadership.png",
     },
     {
       title: "Focused time and energy",
-      icon: "/images/focused_time.png",
+      icon: "/images/smart-energy.png",
     },
     {
       title: "Get motivated",
-      icon: "/images/motivated.png",
+      icon: "/images/reward.png",
     },
     {
       title: "Improve your relationships",
-      icon: "/images/relationships.png",
+      icon: "/images/interaction.png",
     },
   ]
 
@@ -86,42 +86,68 @@ function Desktop() {
         </div>
       </section>
 
-      <section className="w-full p-x">
-        <div className="mb-large">
-          <Typography variant="h4" className="text-primary font-bold text-center">
-            Life Coaching for positive Change
-          </Typography>
-        </div>
+      <section className="w-full px-large flex">
+        <aside className="w-1/2">
+          <div className="mb-large">
+            <Typography variant="h4" className="text-secondary font-bold text-center">
+              Life Coaching for positive Change
+            </Typography>
+          </div>
 
-        <div className="flex items-center justify-center flex-wrap gap-4">
+          {/* <div className="flex items-center justify-center flex-wrap gap-4"> */}
+          <div className="grid grid-cols-2 gap-6">
 
-          {items.map((item, index) => (
-            <div className="flex flex-col items-center justify-center w-96 h-fit rounded-[24px] bg-primary p-4" key={index}>
-              <img src="/images/well_being.png" className="h-14 w-14" />
-              <Typography variant="body1" className="text-white text-center">{item.title}</Typography>
+            {items.map((item, index) => (
+              <div className="flex items-center justify-start h-fit rounded-[24px] bg-primary p-4" key={index}>
+                <img src={item.icon} className="h-14 w-14 mr-small" />
+                <Typography variant="body1" className="text-white text-center">{item.title}</Typography>
+              </div>
+            ))}
+
+
+          </div>
+        </aside>
+
+        <aside className="flex flex-col items-center w-1/2 space-y-10">
+          <div>
+            <Typography variant="h4" className="text-secondary font-bold">
+              Coaching provides:
+            </Typography>
+            <div className="text-black pt-small">
+              <ul className="list-disc pl-5 space-y-2">
+                <li>Own unique time </li>
+                <li>Structured support</li>
+                <li>Challenges</li>
+                <li>Exercises</li>
+                <li>Practical tools</li>
+              </ul>
             </div>
-          ))}
+          </div>
 
+          <div>
+            <Typography variant="h4" className="text-secondary font-bold">
+            Assisting in
+            </Typography>
+            <div className="text-black pt-small">
+              <ul className="list-disc pl-5 space-y-2">
+                <li>Overcoming challenges</li>
+                <li>Being at peace</li>
+                <li>Achieving goals</li>
+                <li>Development personally and professionally</li>
+              </ul>
+            </div>
+          </div>
 
-        </div>
+        </aside>
+
       </section>
 
       <section className="p-large">
         <div>
-          <Typography variant="h4" className="text-secondary font-bold">
-            Coaching provides:
-          </Typography>
+
         </div>
 
-        <div className="text-black pt-small">
-          <ul className="list-disc pl-5 space-y-2">
-            <li>Own unique time </li>
-            <li>Structured support</li>
-            <li>Challenges</li>
-            <li>Exercises</li>
-            <li>Practical tools</li>
-          </ul>
-        </div>
+
       </section>
 
       {/* <section className="p-large flex">

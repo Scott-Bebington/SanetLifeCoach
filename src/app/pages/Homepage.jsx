@@ -55,7 +55,7 @@ function LargeHomepage() {
             >
               Empowering you to overcome obstacles, achieve your goals, and find lasting fulfillment.
             </Typography>
-            <Typography variant='body1' className='w-full'>
+            <Typography variant='body1' className='w-full' sx={{ marginTop: '10px' }}>
               I&apos;m Sanet Nash, a certified Life Coach and Cognitive Behavioral Therapy Practitioner based in Bryanston, Johannesburg. With years of experience in helping individuals unlock their potential and overcome challenges, I&apos;m here to guide you on your path to personal growth.
             </Typography>
             <img src='/images/Logo.jpg' className='h-[250px]' />
