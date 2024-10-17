@@ -10,7 +10,7 @@ import Contact from "./pages/contact";
 import Head from "next/head";
 
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { Dancing_Script, Caveat, M_PLUS_Rounded_1c } from "next/font/google";
+import { Dancing_Script, Caveat, M_PLUS_Rounded_1c, Pacifico } from "next/font/google";
 
 // Initialize the Dancing Script font
 const dancingScript = Dancing_Script({
@@ -19,7 +19,7 @@ const dancingScript = Dancing_Script({
 });
 
 const caveat = Caveat({
-  // weight: ['400', '700'],
+  weight: ['400', '700'],
   subsets: ['latin'],
 });
 
@@ -30,6 +30,18 @@ const mPlusRounded1c = M_PLUS_Rounded_1c({
 
 // Create a custom MUI theme
 const theme = createTheme({
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          backgroundColor: '#75064a',
+          '&:hover': {
+            backgroundColor: '#086878',
+          },
+        },
+      },
+    },
+  },
   li: {
     fontFamily: mPlusRounded1c.style.fontFamily,
   },

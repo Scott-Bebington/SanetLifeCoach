@@ -1,6 +1,6 @@
 "use client";
 
-import { Typography, Divider } from "@mui/material";
+import { Typography, Divider, Button } from "@mui/material";
 import { useState } from "react";
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
@@ -86,9 +86,12 @@ function Desktop() {
             placeholder="Message"
             className="border border-gray-300 rounded-md p-2 w-full h-40"
           />
-          <button className="bg-customPrimary text-white rounded-md p-2 w-full mt-4 h-14">
+          <Button 
+            className="text-white rounded-md p-2 w-full mt-4 h-14"
+            onClick={() => alert("Message sent successfully")}
+          >
             Send Message
-          </button>
+          </Button>
         </aside>
       </div>
     </div>

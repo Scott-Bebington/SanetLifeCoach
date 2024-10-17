@@ -217,7 +217,7 @@ function CTA() {
   };
 
   return (
-    <Button variant='contained' sx={{ backgroundColor: "#75064a" }} className='hover:bg-secondary h-fit' onClick={(e) => handleTabClick()}>Start your journey now</Button>
+    <Button variant='contained' className='h-fit' onClick={(e) => handleTabClick()}>Start your journey now</Button>
   );
 }
 

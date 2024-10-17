@@ -25,10 +25,45 @@ export default function LifeCoaching() {
 
 function Desktop() {
 
+  const items = [
+    {
+      title: "Improve your well-being",
+      icon: "/images/well_being.png",
+    },
+    {
+      title: "Address your stress and anxiety",
+      icon: "/images/stress_anxiety.png",
+    },
+    {
+      title: "Enhance your self-belief",
+      icon: "/images/self_belief.png",
+    },
+    {
+      title: "Feel more confident",
+      icon: "/images/confidence.png",
+    },
+    {
+      title: "Lead with authority",
+      icon: "/images/authority.png",
+    },
+    {
+      title: "Focused time and energy",
+      icon: "/images/focused_time.png",
+    },
+    {
+      title: "Get motivated",
+      icon: "/images/motivated.png",
+    },
+    {
+      title: "Improve your relationships",
+      icon: "/images/relationships.png",
+    },
+  ]
+
   return (
     <>
       <section className="flex">
-        <img src="/images/my_approach.png" className="h-screen w-1/2" />
+        {/* <img src="/images/my_approach.png" className="h-screen w-1/2" /> */}
         <div>
           <section className="px-large py-medium">
             <div className=" my-large">
@@ -46,46 +81,127 @@ function Desktop() {
               Life coaching helps you make positive changes in areas of your life in order for you to be your best self.
               It helps you to explore ideas that feel safe and aligned with your value system.
             </Typography>
-            <div>
-              <Typography variant="h4" className="text-secondary font-bold">
-                Coaching provides:
-              </Typography>
-            </div>
 
-            <div className="text-black pt-small">
-              <ul className="list-disc pl-5 space-y-2">
-                <li>Own unique time </li>
-                <li>Structured support</li>
-                <li>Challenges</li>
-                <li>Exercises</li>
-                <li>Practical tools</li>
-              </ul>
-            </div>
           </section>
         </div>
       </section>
-      <section className="bg-customPrimary w-full p-large">
+
+      <section className="w-full p-x">
         <div className="mb-large">
-          <Typography variant="h4" className="text-white font-bold text-center">
-          Life Coaching for positive Change
-        </Typography>
+          <Typography variant="h4" className="text-primary font-bold text-center">
+            Life Coaching for positive Change
+          </Typography>
         </div>
-        
-        <div className="flex items-center justify-evenly">
-          <div className="flex flex-col items-center justify-center">
-            <img src="/images/well_being.png" className="h-14 w-14" />
-            <Typography variant="h6" className="text-white">Improve your well-being</Typography>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <img src="/images/stress.png" className="h-14 w-14" />
-            <Typography variant="h6" className="text-white">Address your stress and anxiety</Typography>
-          </div>
-          <div className="flex flex-col items-center justify-center">
-            <img src="/images/self-acceptance.png" className="h-14 w-14" />
-            <Typography variant="h6" className="text-white">Enhance your self-belief</Typography>
-          </div>
+
+        <div className="flex items-center justify-center flex-wrap gap-4">
+
+          {items.map((item, index) => (
+            <div className="flex flex-col items-center justify-center w-96 h-fit rounded-[24px] bg-primary p-4" key={index}>
+              <img src="/images/well_being.png" className="h-14 w-14" />
+              <Typography variant="body1" className="text-white text-center">{item.title}</Typography>
+            </div>
+          ))}
+
+
         </div>
       </section>
+
+      <section className="p-large">
+        <div>
+          <Typography variant="h4" className="text-secondary font-bold">
+            Coaching provides:
+          </Typography>
+        </div>
+
+        <div className="text-black pt-small">
+          <ul className="list-disc pl-5 space-y-2">
+            <li>Own unique time </li>
+            <li>Structured support</li>
+            <li>Challenges</li>
+            <li>Exercises</li>
+            <li>Practical tools</li>
+          </ul>
+        </div>
+      </section>
+
+      {/* <section className="p-large flex">
+        <aside className="w-1/2 flex items-center justify-center">
+          <div className="w-full">
+            <div className="text-center w-full">
+              <div>1. Own unique</div>
+              <div>time</div>
+            </div>
+            <div className="flex items-center justify-center">
+              <div className="text-center">
+                <div>5. Structured</div>
+                <div>support</div>
+              </div>
+              <div className="p-large w-1/3 text-center">
+                <Typography variant="h4" className="text-secondary font-bold">
+                  Coaching
+                </Typography>
+                <Typography variant="h4" className="text-secondary font-bold">
+                  provides
+                </Typography>
+              </div>
+              <div className="">
+                2. Challenges
+              </div>
+            </div>
+
+
+            <div className="flex items-center justify-center space-x-24">
+              <div>3. Exercises</div>
+              <div>4. Practical tools</div>
+            </div>
+          </div>
+
+        </aside>
+
+        <aside className="w-1/2 flex items-center justify-center">
+          <div className="w-full">
+            <div className="text-center w-full flex justify-center">
+              <div className="w-fit border-2 border-primary p-2 rounded-lg">
+                <div>1. Overcoming</div>
+                <div>challenges</div>
+              </div>
+            </div>
+            <div className="flex items-center justify-center">
+              <div className="text-center w-1/3 flex justify-end">
+                <div className="w-fit border-2 border-primary p-2 rounded-lg">
+                  3. Achieving goals
+                </div>
+              </div>
+              <div className="p-large w-1/3 text-center">
+                <Typography variant="h4" className="text-secondary font-bold">
+                  Assisting in
+                </Typography>
+              </div>
+              <div className="w-1/3">
+                <div className="w-fit border-2 border-primary p-2 rounded-lg">
+                  2. Being at peace
+                </div>
+
+              </div>
+            </div>
+
+
+            <div className="flex justify-center">
+              <div className="w-fit border-2 border-primary p-2 rounded-lg">
+                <div>4. Development personally</div>
+                <div>and professionally</div>
+              </div>
+
+            </div>
+          </div>
+
+        </aside>
+      </section> */}
+
+
+
+
+
     </>
   );
 }

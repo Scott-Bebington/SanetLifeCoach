@@ -99,18 +99,20 @@ function Desktop() {
       </section>
 
       <section>
-        <div className="flex overflow-x-auto space-x-10 w-full pb-2 px-large justify-center scrollbar-hide">
+        <div className="flex space-x-2 w-full pb-2 px-large justify-between">
           {characteristics.map((characteristic, index) => (
             <div
               key={index}
               id={`industry-${index}`}
-              className="industry w-56 h-24 bg-customPrimary p-medium flex flex-shrink-0 items-center justify-center text-center rounded-lg text-white"
+              className="industry h-24 bg-customPrimary p-medium flex flex-shrink-0 items-center justify-center text-center rounded-lg text-white"
+              style={{ flex: "0 0 13%" }} // each characteristic takes 1/7th of the screen width
             >
               {characteristic}
             </div>
           ))}
         </div>
       </section>
+
     </>
 
   );

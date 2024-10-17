@@ -52,32 +52,7 @@ export default function WhoAmI() {
             realized that I had no connection with the course and decided to change to Personnel Management (HR).
             I completed my Diploma through the Vaal Technicon whilst also working for Gold Fields Mining Company.
           </Typography>
-        </aside>
-      </section>
-
-      <section className="px-small md:px-medium lg:px-large">
-        <Typography variant="h4" className="text-secondary font-bold w-full my-medium">
-          Industries i have been involved in
-        </Typography>
-        <div className="flex overflow-x-auto space-x-10 w-full pb-2 scrollbar-hide">
-        <ul className="list-disc pl-5 space-y-2">
-            {industries.map((industry, index) => (
-            // <div
-            //   key={index}
-            //   id={`industry-${index}`}
-            //   className="industry w-56 h-40 bg-customPrimary p-medium flex flex-shrink-0 items-center justify-center text-center rounded-lg text-white"
-            // >
-            //   {industry}
-            // </div>
-              <li>{industry}</li>
-          ))}
-          </ul>
-
-        </div>
-      </section>
-
-      <section className="px-small md:px-medium lg:px-large">
-        <Typography variant="h4" className="text-secondary font-bold py-medium">
+          <Typography variant="h4" className="text-secondary font-bold py-medium">
           My Experience
         </Typography>
         <Typography variant="body1" className="">
@@ -89,6 +64,25 @@ export default function WhoAmI() {
           me for where I am now. I believe that my own personal journey, challenges and celebrations will
           give you a true sense of safety with no space for judgement during our time spend together.
         </Typography>
+        </aside>
+      </section>
+
+      <section className="px-small md:px-medium lg:px-large">
+        <Typography variant="h4" className="text-secondary font-bold w-full my-medium">
+          Industries i have been involved in
+        </Typography>
+        <div className="flex overflow-x-auto space-x-10 w-full pb-2 scrollbar-hide">
+        <ul className="list-disc pl-5 space-y-2">
+            {industries.map((industry, index) => (
+              <li key={index}>{industry}</li>
+          ))}
+          </ul>
+
+        </div>
+      </section>
+
+      <section className="px-small md:px-medium lg:px-large">
+        
       </section>
     </main>
   );
