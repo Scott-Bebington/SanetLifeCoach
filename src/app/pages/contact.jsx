@@ -48,10 +48,10 @@ function Desktop() {
             Mon - Fri: <span className="font-normal ml-small"> 9am - 5pm</span>
           </Typography>
           <Typography variant="h6" className="font-bold flex items-center my-small">
-            Sat - Sun: <span className="font-normal ml-small"> 9am - 1pm</span>
+            Sat: <span className="font-normal ml-small"> 9am - 1pm</span>
           </Typography>
           <Typography variant="h6" className="font-bold flex items-center">
-            Public Holidays: <span className="font-normal ml-small"> Closed</span>
+            Sessions: <span className="font-normal ml-small"> By Appointment</span>
           </Typography>
         </aside>
 

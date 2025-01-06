@@ -104,7 +104,7 @@ export default function Home() {
 
   return (
     <ThemeProvider theme={theme}>
-      <main className="flex flex-col">
+      <main className="flex flex-col bg-[#ece8e8]">
         {/* Pass the current section to the Navbar */}
         <Navbar currentSection={currentSection} />
         <div ref={(el) => (sectionRefs.current[0] = el)} data-name="Home">

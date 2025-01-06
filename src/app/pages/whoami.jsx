@@ -21,7 +21,7 @@ export default function WhoAmI() {
     <main
       key="background"
       id="background"
-      className="min-h-screen w-full py-12 bg-background"
+      className="min-h-screen w-full py-12"
     >
 
       <section className="p-small md:p-medium lg:p-large">
@@ -43,7 +43,7 @@ export default function WhoAmI() {
           </div>
 
           <Typography variant="body1">
-            I am a 55 year-old divorced woman. A mother of two young men aged 21 & 23.
+            I am a mature divorced woman. A mother of two young men.
             I was raised in a small-town community by my parents and one of three siblings.
             I spent my Highschool career in boarding school in the quaint town of Potchefstroom,
             where I matriculated at Potchefstroom Gimnasium in 1987.
@@ -52,7 +52,7 @@ export default function WhoAmI() {
             realized that I had no connection with the course and decided to change to Personnel Management (HR).
             I completed my Diploma through the Vaal Technicon whilst also working for Gold Fields Mining Company.
           </Typography>
-          <Typography variant="h4" className="text-secondary font-bold py-medium">
+          <Typography variant="h3" className="text-secondary font-bold py-medium">
           My Experience
         </Typography>
         <Typography variant="body1" className="">
