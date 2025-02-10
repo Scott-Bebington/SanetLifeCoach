@@ -29,10 +29,8 @@ function Desktop() {
   return (
     <div className="h-screen flex items-center justify-center">
       <div className="flex w-full justify-evenly py-12">
-
-        {/* Left Aside */}
-        <aside className="w-3/12 min-w-[350px] flex-shrink-0">
-          <img src="/images/Contact_image.png" className="aspect-video w-full rounded-lg mb-medium min-h-[250px]" />
+        <section className="w-3/12 min-w-[350px] flex-shrink-0 flex flex-col justify-center">
+          {/* <img src="/images/Contact_image.png" className="aspect-video w-full rounded-lg mb-medium min-h-[250px]" /> */}
           <Divider className="text-secondary">Contact Details</Divider>
           <Typography variant="h6" className="flex items-center my-small">
             <EmailOutlinedIcon className="mr-small text-customPrimary" />
@@ -53,10 +51,9 @@ function Desktop() {
           <Typography variant="h6" className="font-bold flex items-center">
             Sessions: <span className="font-normal ml-small"> By Appointment</span>
           </Typography>
-        </aside>
+        </section>
 
-        {/* Right Aside */}
-        <aside className="w-8/12 flex-shrink-0 flex flex-col justify-between">
+        <section className="w-8/12 flex-shrink-0 flex flex-col justify-between">
           <Typography variant="h4" className="text-secondary font-bold w-full mb-small">
             Feel free to get in touch
           </Typography>
@@ -93,7 +90,7 @@ function Desktop() {
           >
             Send Message
           </Button>
-        </aside>
+        </section>
       </div>
     </div>
   );
@@ -103,36 +100,7 @@ function Tablet() {
   return (
     <div className="w-full py-12">
 
-      {/* Left Aside */}
-      <section className="w-full flex p-medium">
-        <img src="/images/Contact_image.png" className="aspect-video rounded-lg mb-medium h-[260px]" />
-        <div className="w-full pl-medium">
-          <div className="w-full">
-            <Divider className="text-secondary">Contact Details</Divider>
-            <Typography variant="h6" className="flex items-center my-small">
-              <EmailOutlinedIcon className="mr-small text-customPrimary" />
-              Email-here
-            </Typography>
-            <Typography variant="h6" className="flex items-center">
-              <LocalPhoneOutlinedIcon className="mr-small text-customPrimary" />
-              Phone-here
-            </Typography>
-          </div>
-
-          <div>
-            <Divider className="text-secondary my-small">Work Hours</Divider>
-            <Typography variant="h6" className="font-bold flex items-center">
-              Mon - Fri: <span className="font-normal ml-small"> 9am - 5pm</span>
-            </Typography>
-            <Typography variant="h6" className="font-bold flex items-center my-small">
-              Sat - Sun: <span className="font-normal ml-small"> 9am - 1pm</span>
-            </Typography>
-            <Typography variant="h6" className="font-bold flex items-center">
-              Public Holidays: <span className="font-normal ml-small"> Closed</span>
-            </Typography>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Right Aside */}
       <section className="w-full flex flex-col justify-between px-medium">
@@ -168,6 +136,37 @@ function Tablet() {
         <button className="bg-customPrimary text-white rounded-md p-2 w-full mt-4 h-14">
           Send Message
         </button>
+      </section>
+      
+      {/* Left Aside */}
+      <section className="w-full flex p-medium">
+        {/* <img src="/images/Contact_image.png" className="aspect-video rounded-lg mb-medium h-[260px]" /> */}
+        <div className="w-full">
+          <div className="w-full">
+            <Divider className="text-secondary">Contact Details</Divider>
+            <Typography variant="h6" className="flex items-center my-small">
+              <EmailOutlinedIcon className="mr-small text-customPrimary" />
+              Email-here
+            </Typography>
+            <Typography variant="h6" className="flex items-center">
+              <LocalPhoneOutlinedIcon className="mr-small text-customPrimary" />
+              Phone-here
+            </Typography>
+          </div>
+
+          <div>
+            <Divider className="text-secondary my-small">Work Hours</Divider>
+            <Typography variant="h6" className="font-bold flex items-center">
+              Mon - Fri: <span className="font-normal ml-small"> 9am - 5pm</span>
+            </Typography>
+            <Typography variant="h6" className="font-bold flex items-center my-small">
+              Sat - Sun: <span className="font-normal ml-small"> 9am - 1pm</span>
+            </Typography>
+            <Typography variant="h6" className="font-bold flex items-center">
+              Public Holidays: <span className="font-normal ml-small"> Closed</span>
+            </Typography>
+          </div>
+        </div>
       </section>
     </div>
   );
