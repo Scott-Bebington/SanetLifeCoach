@@ -70,7 +70,7 @@ const Navbar = ({ currentSection }) => {
         <Button
           variant='contained'
           sx={{ backgroundColor: "#75064a" }}
-          className='bg-customPrimary hover:bg-secondary px-1'
+          className='bg-customPrimary hover:bg-secondary px-1 hidden lg:block'
           onClick={(e) => handleTabClick(null, "Contact")}
           style={{ textTransform: 'capitalize' }}
         >

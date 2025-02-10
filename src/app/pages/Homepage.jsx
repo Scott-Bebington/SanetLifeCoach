@@ -58,16 +58,10 @@ function LargeHomepage() {
             <Typography variant='body1' className='w-full' sx={{ marginTop: '10px' }}>
               I&apos;m Sanet Nash, a certified Life Coach and Cognitive Behavioral Therapy Practitioner based in Bryanston, Johannesburg. With experience in helping individuals unlock their potential and overcome challenges, I&apos;m here to guide you on your path to personal growth.
             </Typography>
-            <img src='/images/Logo.jpg' className='h-[250px]' />
+            <img src='/images/Logo-transparent.png' className='h-[250px]' />
             <CTA />
           </div>
-          {/* <div className='mt-medium space-y-5'>
-            
-            
-          </div> */}
         </aside>
-
-
 
         <aside className='h-[400px] w-[400px] border-2 border-blue-500 rounded-full flex items-center justify-center'>
           Image placeholder of your choice
@@ -108,7 +102,7 @@ function LargeHomepage() {
 function MediumHomepage() {
   return (
     <>
-      <div className='min-h-screen w-full flex flex-col pt-24'>
+      <div className='min-h-screen w-full flex items-center flex-col pt-24'>
         <section className='flex items-center justify-between px-medium'>
           <aside className='h-[300px] w-[300px] border-2 border-blue-500 rounded-lg flex items-center justify-center'>
             Image placeholder of your choice
