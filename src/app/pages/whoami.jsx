@@ -4,18 +4,18 @@ import { Typography, Fade, IconButton } from "@mui/material";
 import { useState } from "react";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
 export default function WhoAmI() {
-  const [industries, setIndustries] = useState([
+  const industries = [
     "Accounts and PM Trainee @ East Driefontein Gold mine",
     "Portfolio Management & accounts @ Sable Holdings",
     "PR & below the line marketing (Partner) @ The Publicity Workshop",
     "Charity Trust as Trustee",
     "Wild life research project with Wits University (actively)",
     "Project Manager in Residential Building (Self-employed)",
-  ]);
+  ];
 
   return (
     <main
@@ -23,6 +23,10 @@ export default function WhoAmI() {
       id="background"
       className="min-h-screen w-full py-12"
     >
+
+      <Typography variant="h4" className="text-customPrimary font-bold w-full md:hidden">
+        So who am I?
+      </Typography>
 
       <section className="p-small md:p-medium lg:p-large">
         {/* <img src="/images/CBT_image_1.png" className="h-[400px] w-[400px] rounded-lg float-left mr-small" /> */}
@@ -36,8 +40,8 @@ export default function WhoAmI() {
 
         {/* Text Content */}
         <aside className="sm:min-h-[200px] md:min-h-[300px] lg:min-h-[400px]">
-          <div className=" mb-small">
-            <Typography variant="h3" className="text-customPrimary font-bold w-full">
+          <div className="md:mb-small">
+            <Typography variant="h3" className="text-customPrimary font-bold w-full hidden md:block">
               So who am I?
             </Typography>
           </div>
@@ -53,17 +57,17 @@ export default function WhoAmI() {
             I completed my Diploma through the Vaal Technicon whilst also working for Gold Fields Mining Company.
           </Typography>
           <Typography variant="h3" className="text-secondary font-bold py-medium">
-          My Experience
-        </Typography>
-        <Typography variant="body1" className="">
-          I achieved my Life Coaching and CBT practitioner&apos;s certifications through Archology,
-          Institute for Modern Applied Psychology. I have worked in very diverse industries over
-          the past 32 years and as much as I have had a multitude of rewarding careers, I have always
-          had a strong desire to work in a field that assists people with personal growth. I have also
-          completed various other courses in the counselling and self-development fields to better equip
-          me for where I am now. I believe that my own personal journey, challenges and celebrations will
-          give you a true sense of safety with no space for judgement during our time spend together.
-        </Typography>
+            My Experience
+          </Typography>
+          <Typography variant="body1" className="">
+            I achieved my Life Coaching and CBT practitioner&apos;s certifications through Archology,
+            Institute for Modern Applied Psychology. I have worked in very diverse industries over
+            the past 32 years and as much as I have had a multitude of rewarding careers, I have always
+            had a strong desire to work in a field that assists people with personal growth. I have also
+            completed various other courses in the counselling and self-development fields to better equip
+            me for where I am now. I believe that my own personal journey, challenges and celebrations will
+            give you a true sense of safety with no space for judgement during our time spend together.
+          </Typography>
         </aside>
       </section>
 
@@ -72,17 +76,17 @@ export default function WhoAmI() {
           Industries i have been involved in
         </Typography>
         <div className="flex overflow-x-auto space-x-10 w-full pb-2 scrollbar-hide">
-        <ul className="list-disc pl-5 space-y-2">
+          <ul className="list-disc pl-5 space-y-2">
             {industries.map((industry, index) => (
               <li key={index}>{industry}</li>
-          ))}
+            ))}
           </ul>
 
         </div>
       </section>
 
       <section className="px-small md:px-medium lg:px-large">
-        
+
       </section>
     </main>
   );
